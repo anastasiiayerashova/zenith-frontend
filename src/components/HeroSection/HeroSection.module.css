@@ -1,5 +1,12 @@
 .hero {
+  /* padding-bottom: 80px; */
+  position: relative;
+  padding-top: 100px; /* Отступ, чтобы не перекрывался Header */
   padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 715px; */
 }
 
 .container {
@@ -27,7 +34,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 503px;
+  /* min-height: 503px; */
+  min-height: 50vh;
 }
 
 .button_wrap {
@@ -92,11 +100,108 @@
 
 @media screen and (min-width: 768px) {
   .bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
     background-image: image-set(
       url(../../images/woman-tab@1x.png) 1x,
       url(../../images/woman-tab@2x.png) 2x
     );
-    min-height: 715px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
     background-color: var(--light-brown);
+    min-height: 715px;
+  }
+
+  .bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: var(--dirty-brown);
+    filter: blur(1px);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 91px;
+    margin-top: 60px;
+    max-width: 50%;
+  }
+
+  .title {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: 0.12em;
+    /* padding: 0 0 0 78px; */
+  }
+
+  .button_wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 61px;
+    align-items: flex-end;
+  }
+
+  .hero_button {
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.25em;
+  }
+
+  .hero_button_link::after {
+    width: 204px;
+    height: 82px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bg {
+    min-height: 950px;
+    background-image: image-set(
+      url(../../images/woman-desk@1x.png) 1x,
+      url(../../images/woman-desk@2x.png) 2x
+    );
+  }
+
+  .title {
+    font-size: 65px;
+    line-height: 162%;
+    letter-spacing: 0.12em;
+    padding: 0 0 0 60px;
+  }
+
+  .container {
+    row-gap: 96px;
+  }
+
+  .button_wrap {
+    row-gap: 68px;
+    padding: 0 32px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.2em;
+  }
+
+  .hero_button {
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.2em;
+  }
+
+  .hero_button_link::after {
+    width: 262px;
   }
 }

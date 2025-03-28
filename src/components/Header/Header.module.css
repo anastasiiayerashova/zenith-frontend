@@ -12,10 +12,16 @@
 }
 
 .container {
-  padding: 16px 20px 80px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
+  background-color: transparent;
 }
 
 .visible {
@@ -86,6 +92,10 @@
 @media screen and (min-width: 768px) {
   .container {
     padding: 32px 32px 112px 32px;
+  }
+
+  .theme_checkbox {
+    display: none;
   }
 }
 
