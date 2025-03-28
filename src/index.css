@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Bold.ttf');
+  font-weight: 700;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+:root {
+  --black: #292929;
+  --light-brown: #cab3a1;
+  --dirty-brown: #a88c76;
+  --dirty-beige: #e7dfd9;
+  --light-grey: #f4f4f4;
+  --white: #ffffff;
+  --grey: #e4e5e6;
+  --error: #ff0e0e;
+}
+
+body {
+  font-family: 'Poppins', system-ui;
+  color: var(--black);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
