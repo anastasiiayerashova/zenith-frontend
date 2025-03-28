@@ -1,0 +1,102 @@
+.hero {
+  padding-bottom: 80px;
+}
+
+.container {
+  /* padding: 0 20px 0px 20px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 182%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0 20px 0px 20px;
+}
+
+.bg {
+  background-image: image-set(
+    url(../../images/woman-mob@1x.png) 1x,
+    url(../../images/woman-mob@2x.png) 2x
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 503px;
+}
+
+.button_wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 0 18px 0 18px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 231%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.hero_button_link {
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  gap: 9px;
+  z-index: 5;
+  align-items: center;
+  max-width: 416px;
+  justify-content: center;
+}
+
+.arrow {
+  fill: var(--dirty-brown);
+  width: 20px;
+  height: 20px;
+}
+
+.hero_button_link:hover::after,
+.hero_button_link:focus::after {
+  background-color: var(--dirty-brown);
+}
+
+.hero_button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--black);
+  z-index: 5;
+}
+
+.hero_button_link::after {
+  content: '';
+  width: 169px;
+  height: 64px;
+  z-index: -1;
+  margin-left: -47px;
+  background-color: var(--light-brown);
+  border-radius: 16px;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s var(--dirty-brown);
+}
+
+@media screen and (min-width: 768px) {
+  .bg {
+    background-image: image-set(
+      url(../../images/woman-tab@1x.png) 1x,
+      url(../../images/woman-tab@2x.png) 2x
+    );
+    min-height: 715px;
+    background-color: var(--light-brown);
+  }
+}
