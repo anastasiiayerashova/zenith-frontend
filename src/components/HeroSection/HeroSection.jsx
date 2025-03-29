@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className={s.hero}>
             <Header />
             <div className={s.container}>
-                <p className={s.title}>Sound at the peak of perfection</p>
+                <h1 className={s.title}>Sound at the peak of perfection</h1>
                 <div className={s.bg}></div>
                 <div className={s.button_wrap}>
                     <p className={s.text}>Open the world of premium sound with Zenith</p>

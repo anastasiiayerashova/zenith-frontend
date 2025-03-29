@@ -1,0 +1,29 @@
+.section {
+  padding: 32px 0;
+  background-color: var(--grey);
+}
+
+.links_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: center;
+  text-align: center;
+  & li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .links_list {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+}

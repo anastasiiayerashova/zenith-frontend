@@ -1,0 +1,248 @@
+.about {
+  padding: 40px 16px 70px 16px;
+  background: linear-gradient(239deg, var(--light-brown) 0%, #a98d77 100%);
+  & h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 2.52em;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+.first_wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-bottom: 96px;
+  & p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.58em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.image {
+  background-image: image-set(
+    url(../../images/about-mob1x.png) 1x,
+    url(../../images/about-mob2x.png) 2x
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 376px;
+  max-width: 320px;
+  border-radius: 65px;
+}
+
+.about_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.first_li {
+  padding: 24px 21px 11px 21px;
+  border-radius: 24px;
+  background-color: var(--dirty-beige);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  /* justify-content: center; */
+  align-items: center;
+  & h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.83em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.58em;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    text-align: center;
+    list-style: disc inside;
+  }
+}
+
+.second_li {
+  padding: 33px 50px 42px;
+  border-radius: 24px;
+  background-color: var(--dirty-beige);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  & h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.83em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+  & p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.58em;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 60px 32px;
+    & h2 {
+      font-size: 43px;
+      line-height: 1.7em;
+      letter-spacing: 0.33em;
+      padding-bottom: 54px;
+    }
+  }
+
+  .first_wrap {
+    padding-bottom: 74px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    & p {
+      max-width: 336px;
+      text-align: left;
+    }
+  }
+
+  .image {
+    background-image: image-set(
+      url(../../images/about-tab1x.png) 1x,
+      url(../../images/about-tab2x.png) 2x
+    );
+    min-height: 392px;
+    min-width: 335px;
+  }
+
+  .about_list {
+    flex-direction: row;
+    column-gap: 34px;
+  }
+
+  .first_li {
+    padding: 14px 13px;
+    /* max-height: 224px; */
+    min-width: 202px;
+    row-gap: unset;
+    & h4 {
+      font-size: 14px;
+      line-height: 2.93em;
+      letter-spacing: 0.27em;
+    }
+    & ul {
+      font-size: 10px;
+      line-height: 2.4em;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  .second_li {
+    padding: 14px 18px 31px;
+    /* max-height: 224px; */
+    row-gap: unset;
+    & h4 {
+      font-size: 14px;
+      line-height: 2.93em;
+      letter-spacing: 0.27em;
+    }
+    & p {
+      font-size: 10px;
+      line-height: 2.4em;
+      letter-spacing: 0.2em;
+      row-gap: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    padding: 73px 32px;
+    & h2 {
+      font-size: 80px;
+      line-height: 0.91em;
+      letter-spacing: 0.21em;
+      padding-bottom: 159px;
+    }
+  }
+
+  .first_wrap {
+    padding-bottom: 112px;
+    justify-content: unset;
+    gap: 72px;
+    & p {
+      max-width: 592px;
+      font-size: 20px;
+      line-height: 2.6em;
+      letter-spacing: 0.25em;
+    }
+  }
+
+  .image {
+    background-image: image-set(
+      url(../../images/about-desk1x.png) 1x,
+      url(../../images/about-desk2x.png) 2x
+    );
+    min-height: 646px;
+    min-width: 552px;
+  }
+
+  .about_list {
+    column-gap: 66px;
+  }
+
+  .first_li {
+    padding: 33px 22px;
+    /* max-height: 224px; */
+    min-width: 358px;
+    row-gap: unset;
+    justify-content: space-between;
+    & h4 {
+      font-size: 27px;
+      line-height: 1.57em;
+      letter-spacing: 0.25em;
+    }
+    & ul {
+      font-size: 14px;
+      line-height: 2.4em;
+      letter-spacing: 0.27em;
+    }
+  }
+
+  .second_li {
+    padding: 33px 22px;
+    /* max-height: 224px; */
+    row-gap: 4px;
+    & h4 {
+      font-size: 28px;
+      line-height: 1.57em;
+      letter-spacing: 0.25em;
+    }
+    & p {
+      font-size: 14px;
+      line-height: 2.4em;
+      letter-spacing: 0.27em;
+    }
+  }
+}

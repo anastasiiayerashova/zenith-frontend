@@ -1,0 +1,205 @@
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ============================MOBILE STYLES========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.marquee {
+  overflow: hidden;
+  transform: rotate(2deg);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 240%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: var(--light-brown);
+  position: relative;
+  z-index: 1;
+}
+
+.marquee__inner {
+  display: flex;
+}
+
+.marquee__line {
+  list-style: none;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 32px 0px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.marquee__line li {
+  position: relative;
+  padding: 0 30px;
+}
+
+.marquee__line li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--white);
+  border-radius: 2px;
+}
+
+.marquee_2 {
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 240%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dirty-brown);
+  background-color: var(--grey);
+  width: 100%;
+  transform: translateY(8px) rotate(0.5deg);
+  z-index: 0;
+}
+
+.marquee__inner_2 {
+  display: flex;
+}
+
+.marquee__line_2 {
+  list-style: none;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 32px 0px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLineReverse;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.marquee__line_2 li {
+  position: relative;
+  padding: 0 30px;
+}
+
+.marquee__line_2 li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--black);
+  border-radius: 2px;
+}
+
+/* ============================TRANSITION========================================= */
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeLineReverse {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ============================TABLET STYLES========================================= */
+
+@media only screen and (min-width: 768px) {
+  .marquee {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .marquee__line {
+    padding: 40px 0px;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .marquee__line li {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+
+  .marquee_2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .marquee__line_2 {
+    padding: 40px 0px;
+  }
+  .marquee__line_2 li {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+}
+
+/* ============================DESKTOP STYLE========================================= */
+
+@media only screen and (min-width: 1280px) {
+  .marquee {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .marquee__line {
+    padding: 40px 0px;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .marquee__line li {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+
+  .marquee_2 {
+    overflow: hidden;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .marquee__line_2 {
+    padding: 40px 0px;
+  }
+  .marquee__line_2 li {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+}
