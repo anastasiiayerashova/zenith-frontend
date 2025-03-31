@@ -8,13 +8,21 @@ const LineSection = () => {
   <div className={s.marquee}>
     <div className={s.marquee__inner}>
       <ul className={s.marquee__line}>
-        <li>NEW</li>
+        <li>BEST PRICES</li>
+        <li>NEW ARRIVALS</li>
+        <li>LATEST COLLECTION</li>
+        <li>LIMITED OFFER</li>
+        <li>HOT DEALS</li>
         <li>DISCOUNTS</li>
         <li>SALE</li>
       </ul>
 
       <ul className={s.marquee__line}>
-        <li>NEW</li>
+        <li>BEST PRICES</li>
+        <li>NEW ARRIVALS</li>
+        <li>LATEST COLLECTION</li>
+        <li>LIMITED OFFER</li>
+        <li>HOT DEALS</li>
         <li>DISCOUNTS</li>
         <li>SALE</li>
       </ul>
@@ -24,13 +32,21 @@ const LineSection = () => {
   <div className={s.marquee_2}>
     <div className={s.marquee__inner_2}>
       <ul className={s.marquee__line_2}>
-        <li>NEW</li>
+        <li>BEST PRICES</li>
+        <li>NEW ARRIVALS</li>
+        <li>LATEST COLLECTION</li>
+        <li>LIMITED OFFER</li>
+        <li>HOT DEALS</li>
         <li>DISCOUNTS</li>
         <li>SALE</li>
       </ul>
 
       <ul className={s.marquee__line_2}>
-        <li>NEW</li>
+        <li>BEST PRICES</li>
+        <li>NEW ARRIVALS</li>
+        <li>LATEST COLLECTION</li>
+        <li>LIMITED OFFER</li>
+        <li>HOT DEALS</li>
         <li>DISCOUNTS</li>
         <li>SALE</li>
       </ul>

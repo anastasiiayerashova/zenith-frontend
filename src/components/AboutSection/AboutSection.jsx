@@ -2,7 +2,7 @@ import s from './AboutSection.module.css'
 
 const AboutSection = () => {
     return (
-        <section className={s.about}>
+        <section className={s.about} id='about'>
             <h2>About Zenith</h2>
             <div className={s.first_wrap}>
                 <div className={s.image}></div>

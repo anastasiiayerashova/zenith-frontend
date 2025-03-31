@@ -9,8 +9,6 @@
   border: 0;
 }
 
-/* ============================MOBILE STYLES========================================= */
-
 *,
 *::before,
 *::after {
@@ -22,7 +20,7 @@
   transform: rotate(2deg);
   font-weight: 500;
   font-size: 20px;
-  line-height: 240%;
+  line-height: 2.4em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background-color: var(--light-brown);
@@ -68,7 +66,7 @@
   overflow: hidden;
   font-weight: 500;
   font-size: 20px;
-  line-height: 240%;
+  line-height: 2.4em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dirty-brown);
@@ -95,6 +93,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
 .marquee__line_2 li {
   position: relative;
   padding: 0 30px;
@@ -113,6 +112,7 @@
 }
 
 /* ============================TRANSITION========================================= */
+
 @keyframes marqueeLine {
   from {
     transform: translateX(0);
@@ -132,8 +132,6 @@
     transform: translateX(0);
   }
 }
-
-/* ============================TABLET STYLES========================================= */
 
 @media only screen and (min-width: 768px) {
   .marquee {
@@ -161,14 +159,13 @@
   .marquee__line_2 {
     padding: 40px 0px;
   }
+
   .marquee__line_2 li {
     position: relative;
     padding-left: 30px;
     padding-right: 24px;
   }
 }
-
-/* ============================DESKTOP STYLE========================================= */
 
 @media only screen and (min-width: 1280px) {
   .marquee {
@@ -197,6 +194,7 @@
   .marquee__line_2 {
     padding: 40px 0px;
   }
+
   .marquee__line_2 li {
     position: relative;
     padding-left: 30px;

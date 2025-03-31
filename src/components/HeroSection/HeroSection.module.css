@@ -1,16 +1,13 @@
 .hero {
-  /* padding-bottom: 80px; */
   position: relative;
-  padding-top: 100px; /* Отступ, чтобы не перекрывался Header */
+  padding-top: 100px;
   padding-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* height: 715px; */
 }
 
 .container {
-  /* padding: 0 20px 0px 20px; */
   display: flex;
   flex-direction: column;
   row-gap: 70px;
@@ -20,7 +17,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 40px;
-  line-height: 182%;
+  line-height: 1.82em;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 0 20px 0px 20px;
@@ -34,7 +31,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* min-height: 503px; */
   min-height: 503px;
 }
 
@@ -48,7 +44,7 @@
 .text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 231%;
+  line-height: 2.31em;
   letter-spacing: 0.19em;
   text-transform: uppercase;
 }
@@ -79,7 +75,6 @@
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 178%;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--black);
@@ -142,7 +137,6 @@
     font-size: 40px;
     text-align: left;
     letter-spacing: 0.12em;
-    /* padding: 0 0 0 78px; */
   }
 
   .button_wrap {
@@ -154,7 +148,6 @@
 
   .hero_button {
     font-size: 16px;
-    line-height: 200%;
     letter-spacing: 0.25em;
   }
 
@@ -175,7 +168,7 @@
 
   .title {
     font-size: 65px;
-    line-height: 162%;
+    line-height: 1.62em;
     letter-spacing: 0.12em;
     padding: 0 0 0 60px;
   }
@@ -191,13 +184,12 @@
 
   .text {
     font-size: 20px;
-    line-height: 200%;
+    line-height: 2em;
     letter-spacing: 0.2em;
   }
 
   .hero_button {
     font-size: 20px;
-    line-height: 160%;
     letter-spacing: 0.2em;
   }
 
