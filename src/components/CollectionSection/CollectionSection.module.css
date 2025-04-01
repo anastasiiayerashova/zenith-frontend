@@ -1,0 +1,244 @@
+.collection {
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 2.82em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 90px;
+}
+
+.product_item {
+  cursor: pointer;
+  padding: 100px 0px 16px 13px;
+  border-radius: 36px;
+  background: #e7dfd9;
+  position: relative;
+  width: 240px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product_item:first-child {
+  background: linear-gradient(
+    135deg,
+    rgba(231, 223, 217, 0.74) 48.82%,
+    rgba(154, 133, 116, 0.74) 85.5%
+  );
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.img_wrapper {
+  position: absolute;
+  top: -80px;
+  left: 80%;
+  transform: translateX(-70%);
+  width: 100%;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.price_wrapper {
+  & p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5em;
+    letter-spacing: 0.75em;
+    text-transform: uppercase;
+  }
+}
+
+.original_price {
+  & span {
+    text-decoration: line-through;
+  }
+}
+
+.price {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 2em;
+  letter-spacing: 0.75em;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  border-bottom: 1px solid var(--light-brown);
+}
+
+@media screen and (min-width: 768px) {
+  .collection {
+    padding: 124px 32px;
+  }
+
+  .title {
+    font-size: 43px;
+    letter-spacing: 0.33em;
+  }
+
+  .text {
+    font-size: 13px;
+    line-height: 3.38em;
+    letter-spacing: 0.23em;
+  }
+
+  .text_wrap {
+    row-gap: 54px;
+    padding-bottom: 80px;
+  }
+
+  .product_list {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+
+  .product_item {
+    padding: 190px 0px 32px 18px;
+    width: unset;
+    min-width: 320px;
+    min-height: 290px;
+  }
+
+  .product_item:first-child {
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+  .name {
+    font-size: 14px;
+    letter-spacing: 0.31em;
+  }
+
+  .price_wrapper {
+    & p {
+      font-size: 11px;
+      line-height: 1.5em;
+      letter-spacing: 0.45em;
+    }
+  }
+
+  .price {
+    font-size: 11px;
+    letter-spacing: 0.45em;
+  }
+
+  .btn {
+    margin-top: 50px;
+  }
+
+  .img_wrapper {
+    top: -75px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .collection {
+    padding: 164px 100px;
+  }
+
+  .title {
+    font-size: 80px;
+    letter-spacing: 0.21em;
+  }
+
+  .text {
+    font-size: 19px;
+    letter-spacing: 0.26em;
+  }
+
+  .text_wrap {
+    row-gap: 120px;
+    padding-bottom: 150px;
+  }
+
+  .product_list {
+    display: grid;
+    gap: 65px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .product_item:first-child {
+    width: 410px;
+    height: 370px;
+    margin-bottom: 100px;
+    grid-column: span 3;
+    justify-self: center;
+  }
+
+  .product_item:first-child .img_wrapper {
+    top: -120px;
+  }
+
+  .name {
+    font-size: 19px;
+    letter-spacing: 0.26em;
+  }
+
+  .price_wrapper {
+    & p {
+      font-size: 14px;
+      line-height: 2em;
+      letter-spacing: 0.36em;
+    }
+  }
+
+  .price {
+    font-size: 14px;
+    line-height: 2.7em;
+    letter-spacing: 0.36em;
+  }
+
+  .btn {
+    margin-top: 80px;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+  }
+}

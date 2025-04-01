@@ -42,6 +42,7 @@
 
 html {
   scrollbar-gutter: stable;
+  overflow-x: hidden;
 }
 
 :root {
@@ -58,6 +59,7 @@ html {
 body {
   font-family: 'Poppins', system-ui;
   color: var(--black);
+  overflow-x: hidden;
 }
 
 *,
