@@ -1,0 +1,575 @@
+[
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743452420/airx_mob_hmot8n.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743452420/airx_tab_ktrvdn.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743452420/airx_desc_apamqy.png"
+        },
+        "name": "ZENITH AIRX",
+        "originalPrice": 450,
+        "salePrice": 350,
+        "description": "Zenith AirX is a modern pair of premium Bluetooth headphones that combine advanced technology, comfort, and elegant design.",
+  "features": [
+    {
+      "name": "Noise Cancellation",
+      "description": "Active Noise Cancellation (ANC) eliminates up to 98% of ambient noise, Transparency Mode available with one touch."
+    },
+    {
+      "name": "Battery",
+      "description": "Up to 38 hours of playtime, fast charging (4 hours in 10 minutes)."
+    },
+    {
+      "name": "Comfort",
+      "description": "Weighs only 180g, eco-friendly materials."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3, multi-point pairing."
+    }
+  ],
+  "highlights": [
+    "Zenith AirX headphones",
+    "USB-C charging cable",
+    "Premium carrying pouch",
+    "3.5mm audio cable"
+  ],
+  "reviews": [
+    {
+        "author": "Jake_Williams",
+        "text": "I’ve tried many headphones, but Zenith AirX is a game-changer. The noise cancellation is incredible, blocking out distractions completely, and the sound quality is top-notch. The lightweight design makes them super comfortable for long hours. Highly recommend!"
+    },
+    {
+        "author": "Sophia_Lane",
+        "text": "The battery life on the Zenith AirX is phenomenal! I can use them all day without worrying about charging, and the quick charge feature is a lifesaver. The sleek design and eco-friendly materials are a big plus for me!"
+    },
+    {
+        "author": "Travel_Junkie89",
+        "text": "These headphones are perfect for work and travel. The multi-point pairing lets me switch between my laptop and phone seamlessly, and the ANC works wonders on noisy flights. Zenith AirX is worth every penny!"
+    },
+    {
+        "author": "Emily_Grace",
+        "text": "The comfort level of Zenith AirX is unmatched. I can wear them for hours without any discomfort. The Transparency Mode is a great feature when I need to stay aware of my surroundings. Love the minimalistic yet stylish design!"
+    },
+    {
+        "author": "TechLover_Dave",
+        "text": "Zenith AirX combines everything I need in headphones: excellent sound quality, reliable connectivity, and long-lasting battery life. The Bluetooth 5.3 connection is super stable, and the foldable design makes them easy to carry. Couldn't be happier with my purchase!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743453638/luxair_mob-min_txfzj0.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743453638/luxair_tab-min_ozqid9.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743453638/luxair_desc-min_q3soxa.png"
+        },
+        "name": "ZENITH LUX AIR",
+        "price": 378,
+        "description": "Zenith Luxe Air redefines premium audio with a perfect balance of luxury and performance. Designed for those who appreciate high-end aesthetics and crystal-clear sound, these headphones offer a sleek and refined listening experience.",
+  "features": [
+    {
+      "name": "Noise Cancellation",
+      "description": "Hybrid Active Noise Cancellation (ANC) blocks up to 97% of ambient noise, with an adaptive Transparency Mode for real-world awareness."
+    },
+    {
+      "name": "Battery",
+      "description": "Up to 40 hours of playtime, with an ultra-fast charging feature (5 hours in just 10 minutes)."
+    },
+    {
+      "name": "Comfort",
+      "description": "Ultra-soft memory foam ear cushions and a feather-light build (180g) for extended wear."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3 with multi-point pairing ensures effortless device switching."
+    },
+    {
+      "name": "Sound Quality",
+      "description": "Premium 45mm drivers deliver rich bass, crystal-clear mids, and smooth treble for an immersive audio experience."
+    }
+  ],
+  "highlights": [
+    "Zenith Luxe Air headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Luxury carrying case",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "Oliver_Hayes",
+        "text": "Zenith Luxe Air is the perfect blend of luxury and technology. The sound quality is breathtaking, with crystal-clear highs and deep bass. The memory foam cushions are a dream – I can wear them for hours without any discomfort. Worth every penny!"
+    },
+    {
+        "author": "Amelia_Carter",
+        "text": "I’ve used a lot of premium headphones, but Luxe Air stands out. The Hybrid ANC is highly effective, blocking out most background noise while letting me stay aware with Transparency Mode when needed. The design is stunning and feels premium. Highly recommend!"
+    },
+    {
+        "author": "Liam_Soundwave",
+        "text": "The audio experience with Luxe Air is next-level. The soundstage is expansive, making every song feel immersive. The battery life is impressive, and the build quality screams luxury. A fantastic purchase!"
+    },
+    {
+        "author": "Sophie_Traveler",
+        "text": "These are my go-to headphones for travel. They’re incredibly comfortable, lightweight, and the noise cancellation works wonders on flights. Plus, the sleek design makes them look as good as they sound!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743453910/echo_mob_g4djzr.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743453922/echo_tab_dfnxys.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743453932/echo_desc_bigeov.png"
+        },
+        "name": "ZENITH ECHO 360",
+        "price": 349,
+        "description": "Zenith Echo 360 is a state-of-the-art Bluetooth headphone designed to deliver outstanding audio performance with a striking aesthetic. With a bold violet finish and luxurious gold accents, it’s perfect for those who want to make a statement without compromising on quality.",
+  "features": [
+    {
+      "name": "Noise Cancellation",
+      "description": "Advanced Hybrid ANC eliminates up to 96% of ambient noise, with an intuitive Transparency Mode for seamless awareness."
+    },
+    {
+      "name": "Battery",
+      "description": "Provides up to 36 hours of playtime on a single charge, with fast-charging capability (5 hours in just 10 minutes)."
+    },
+    {
+      "name": "Comfort",
+      "description": "Plush memory foam ear cushions and lightweight design (185g) ensure hours of comfortable wear."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3 with multi-point pairing for effortless switching between devices."
+    },
+    {
+      "name": "Sound Quality",
+      "description": "Precision-tuned 42mm drivers deliver powerful bass, clear mids, and sparkling highs for a dynamic listening experience."
+    }
+  ],
+  "highlights": [
+    "Zenith Echo 360 headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Premium carrying pouch",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "Oliver_Thompson",
+        "text": "Zenith Echo 360 is a masterpiece! The sound quality is rich and balanced, and the violet and gold design feels so luxurious. Perfect for both work and leisure. I love how comfortable they are even after hours of use."
+    },
+    {
+        "author": "Nathan_Jet",
+        "text": "Switching between my phone and laptop has never been this easy. The multi-point pairing is seamless, and the quick-charge feature saved me multiple times. Zenith Echo 360 is worth every cent!"
+    },
+    {
+        "author": "Grace_Explorer",
+        "text": "As a frequent flyer, I couldn’t ask for better headphones. Lightweight, with incredible sound quality and reliable noise cancellation for flights. Plus, the violet and gold design is so chic!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743454121/nova_mob_djqvxr.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743454131/nova_tab_yb8phh.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743454141/nova_desc_l9rjtf.png"
+        },
+        "name": "ZENITH NOVA ANX",
+        "price": 458,
+        "description": "Zenith Nova ANx is the epitome of elegance and performance, designed for users who value both stunning aesthetics and exceptional functionality. With a gentle sky-blue finish, these headphones are perfect for those seeking serenity in their audio experience.",
+  "features": [
+    {
+      "name": "Noise Cancellation",
+      "description": "Adaptive ANC technology intelligently reduces ambient noise while offering Transparency Mode for environmental awareness."
+    },
+    {
+      "name": "Battery",
+      "description": "Enjoy up to 40 hours of playtime, and get an extra 5 hours with just a 10-minute quick charge."
+    },
+    {
+      "name": "Comfort",
+      "description": "Lightweight (175g) with soft, breathable ear cushions for ultimate comfort during extended use."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3 with dual-device pairing for effortless transitions between gadgets."
+    },
+    {
+      "name": "Sound Quality",
+      "description": "Custom 44mm drivers produce rich, balanced sound with deep lows, vibrant mids, and crystal-clear highs."
+    }
+  ],
+  "highlights": [
+    "Zenith Nova ANx headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Premium carrying pouch",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "James_Bright",
+        "text": "Zenith Nova ANx is a game-changer. The sound is incredibly clear, and the Adaptive ANC works like a charm. The sky-blue design is so calming and unique – I’ve gotten so many compliments already!"
+    },
+    {
+        "author": "Luna_Waves",
+        "text": "These headphones are a delight to use. The battery life is phenomenal, and the quick-charge feature saved me during a long commute. The soft ear cushions make them perfect for all-day wear. Highly recommended!"
+    },
+    {
+        "author": "Oliver_Voice",
+        "text": "Switching between my phone and tablet has never been easier. The Bluetooth connectivity is seamless, and the sound quality is unmatched. The blue finish gives them a sophisticated, elegant look."
+    },
+    {
+        "author": "Mia_Explorer",
+        "text": "As someone who listens to music constantly, Zenith Nova ANx is perfect. They’re lightweight, and the audio is so immersive that I feel like I’m in a concert hall. Plus, they look stunning in sky blue!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743458676/studio_mob_onmpfe.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743458687/studio_tab_zibfsa.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743458700/studio_desc_juuexh.png"
+        },
+        "name": "ZENITH STUDIO AIR",
+        "price": 385,
+        "description": "Zenith Studio Air is crafted for audiophiles and professionals who demand pristine sound and exceptional comfort. Designed with a sleek, modern aesthetic, these headphones bring studio-quality audio to everyday listening.",
+  "features": [
+    {
+      "name": "Studio-Grade Sound",
+      "description": "Custom-tuned 45mm drivers deliver a balanced, high-fidelity sound with deep bass, rich mids, and crisp highs."
+    },
+    {
+      "name": "Adaptive Noise Cancellation",
+      "description": "Advanced ANC technology removes up to 97% of ambient noise, with Transparency Mode for situational awareness."
+    },
+    {
+      "name": "Battery Life",
+      "description": "Enjoy up to 40 hours of playback on a single charge, with a 10-minute fast charge providing 6 hours of use."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Ultra-soft memory foam ear cushions and an adjustable headband ensure all-day comfort."
+    },
+    {
+      "name": "Ergonomic Comfort",
+      "description": "Custom 44mm drivers produce rich, balanced sound with deep lows, vibrant mids, and crystal-clear highs."
+    },
+    {
+        "name": "Seamless Connectivity",
+        "description": "Bluetooth 5.3 with multi-point pairing allows smooth switching between devices."
+    }
+  ],
+  "highlights": [
+    "Zenith Studio Air headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Premium travel case",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "Daniel_Wave",
+        "text": "The Studio Air headphones deliver professional-level sound in a stylish and comfortable design. The ANC is excellent, blocking out distractions while I work on music production. Absolutely worth it!"
+    },
+    {
+        "author": "Samantha_Tech",
+        "text": "These are the best headphones I’ve ever owned! The sound is crystal-clear with deep bass, and the battery life is outstanding. I can use them all day without discomfort. Highly recommended!"
+    },
+    {
+        "author": "Michael_Traveler",
+        "text": "Perfect for long trips! The noise cancellation makes flights peaceful, and the sound quality is superb. I also love the premium feel and lightweight build. Zenith nailed it with these."
+    },
+    {
+        "author": "Olivia_SoundPro",
+        "text": "As a professional audio engineer, I’m very picky about headphones. Studio Air exceeded my expectations – the sound profile is balanced, the fit is comfortable, and the battery lasts forever. A fantastic product!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743458872/velvet_mob_pkmgrr.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743458881/velvet_tab_di1yps.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743458888/velvet_desc_khksv4.png"
+        },
+        "name": "ZENITH VELVET TOUCH",
+        "price": 329,
+        "description": "Zenith Velvet Touch is designed for those who appreciate refined aesthetics and immersive audio. Wrapped in a soft-touch matte finish with sleek, minimalist accents, these Bluetooth headphones provide a luxurious listening experience while ensuring maximum comfort.",
+  "features": [
+    {
+      "name": "Noise Cancellation",
+      "description": "Advanced ANC technology reduces up to 95% of ambient noise, while Transparency Mode keeps you aware of your surroundings."
+    },
+    {
+      "name": "Battery",
+      "description": "Up to 34 hours of continuous playtime, with ultra-fast charging (4 hours in just 10 minutes)."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3 with seamless multi-device pairing."
+    },
+    {
+      "name": "Comfort",
+      "description": "Ultra-soft ear cushions with memory foam padding for all-day wear."
+    },
+    {
+        "name": "Sound Quality",
+        "description": "Expertly tuned 40mm drivers deliver rich bass, crisp vocals, and balanced highs."
+    }
+  ],
+  "highlights": [
+    "Zenith Velvet Touch headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Premium storage pouch",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "Daniel_Walker",
+        "text": "The sound quality is absolutely stunning! Deep bass, clear highs, and a super comfortable fit. I can wear these for hours without any discomfort. The soft-touch finish gives them a premium feel. Love them!"
+    },
+    {
+        "author": "Sophie_Mayer",
+        "text": "These headphones are a dream! The ANC works brilliantly, blocking out background noise while keeping the music crystal clear. The memory foam ear cushions are so comfortable, and the battery life is impressive. Highly recommend!"
+    },
+    {
+        "author": "Lucas_Thorne",
+        "text": "Velvet Touch is the perfect name – they feel as luxurious as they sound. The quick charge feature is a lifesaver, and I love the minimalist design. Definitely one of the best headphones I’ve owned."
+    },
+    {
+        "author": "Ella_Rose",
+        "text": "Absolutely fantastic headphones! The audio clarity is superb, and they look so stylish. I use them daily for work and travel, and the noise cancellation is top-notch. Worth every penny!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743458999/hyper_mob_n3wm0i.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459005/hyper_tab_qvkuqb.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459005/hyper_tab_qvkuqb.png"
+        },
+        "name": "ZENITH HYPER ERA",
+        "price": 550,
+        "description": "Zenith Hyper Era is the pinnacle of audio innovation, blending futuristic aesthetics with uncompromising sound quality. Designed for true audiophiles, these premium headphones offer cutting-edge technology, luxurious comfort, and an immersive listening experience.",
+  "features": [
+    {
+      "name": "Noise Cancellation",
+      "description": "Industry-leading Adaptive Hybrid ANC eliminates up to 99% of ambient noise, with Smart Transparency Mode for environmental awareness."
+    },
+    {
+      "name": "Battery",
+      "description": "Up to 42 hours of continuous playtime, with an ultra-fast charge (6 hours in just 10 minutes)."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Next-gen Bluetooth 5.4 with multi-device pairing and ultra-low latency."
+    },
+    {
+      "name": "Comfort",
+      "description": "Ergonomic memory foam ear cushions with a feather-light 190g design for extended wear."
+    },
+    {
+        "name": "Sound Quality",
+        "description": "Custom-engineered 45mm drivers deliver high-fidelity audio with deep bass, rich mids, and crystal-clear highs."
+    }
+  ],
+  "highlights": [
+    "Zenith Hyper Era headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Premium hard-shell carrying case",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "Michael_SoundPro",
+        "text": "Zenith Hyper Era is the best pair of headphones I’ve ever owned. The noise cancellation is phenomenal, and the audio clarity is unmatched. Perfect for music, gaming, and travel. Worth every dollar!"
+    },
+    {
+        "author": "Jessica_TechGuru",
+        "text": "Incredible soundstage with deep bass and crystal-clear highs. The battery life is a game-changer, and the fast charging is super convenient. The futuristic design makes it stand out. Highly recommend!"
+    },
+    {
+        "author": "Daniel_Audiophile",
+        "text": "These headphones redefine premium audio. The ANC is so effective that I can completely escape into my music. Comfort is outstanding, and the Bluetooth connection is flawless. Best investment I’ve made."
+    },
+    {
+        "author": "Samantha_Traveler",
+        "text": "I travel constantly, and the Hyper Era has been a lifesaver. The lightweight design, long battery life, and top-tier noise cancellation make long flights enjoyable. Plus, the futuristic look gets compliments everywhere!"
+    }
+  ]
+    },
+       {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459328/elite_mob_khikud.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459336/elite_tab_wbb4ki.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459336/elite_tab_wbb4ki.png"
+        },
+        "name": "ZENITH ELITE ANC",
+        "originalPrice": 385,
+        "salePrice": 245,
+        "description": "Zenith Elite ANC brings premium audio performance at an unbeatable value. Featuring advanced noise cancellation, immersive sound quality, and an ultra-lightweight build, these headphones are designed for those who demand both comfort and functionality.",
+  "features": [
+    {
+      "name": "Active Noise Cancellation (ANC)",
+      "description": "Effectively reduces up to 95% of external noise for an uninterrupted listening experience."
+    },
+    {
+      "name": "Battery",
+      "description": "Up to 40 hours of playtime on a full charge, plus a quick charge feature (5 hours in just 10 minutes)."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3 with multi-point pairing for seamless switching between devices."
+    },
+    {
+      "name": "Comfort",
+      "description": "Ultra-lightweight design (170g) with memory foam ear cushions for extended wear."
+    },
+    {
+        "name": "Sound Quality",
+        "description": "Precision-engineered 40mm drivers deliver deep bass, rich mids, and clear highs."
+    }
+  ],
+  "highlights": [
+    "Zenith Elite ANC headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Premium carrying case",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "David_SoundPro",
+        "text": "Zenith Elite ANC delivers outstanding sound at an incredible price. The noise cancellation works flawlessly, and the comfort level is amazing. A fantastic deal!"
+    },
+    {
+        "author": "Olivia_Harmony",
+        "text": "I was skeptical about the price, but these headphones exceeded my expectations. Crystal-clear audio, excellent battery life, and super comfortable to wear for long hours. Highly recommended!"
+    },
+    {
+        "author": "Mark_TechGuru",
+        "text": "The ANC feature is a game changer – it blocks out distractions and lets me focus. The sound is crisp, and the bass is just right. Love the sleek design too!"
+    },
+    {
+        "author": "Sophia_Wanderer",
+        "text": "Perfect for travel! The battery life is impressive, and the quick charge feature is a lifesaver. Plus, they are so lightweight that I barely feel them on my head. Worth every penny!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459358/studiomax_mob_kr3ejf.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459367/studiomax_tab_pyeryr.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459367/studiomax_tab_pyeryr.png"
+        },
+        "name": "ZENITH STUDIO MAX",
+        "originalPrice": 285,
+        "salePrice": 210,
+        "description": "Zenith Studio Max is crafted for those who demand professional-grade sound without sacrificing style. Whether you're an audiophile, a creator, or a casual listener, these headphones deliver crystal-clear audio, deep bass, and all-day comfort.",
+  "features": [
+    {
+      "name": "Noise Isolation",
+      "description": "Advanced passive noise isolation for an immersive listening experience."
+    },
+    {
+      "name": "Battery Life",
+      "description": "Enjoy up to 32 hours of continuous playback with rapid charging (5 hours in just 15 minutes)."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3 with multi-device pairing for seamless transitions between your devices."
+    },
+    {
+      "name": "Premium Comfort",
+      "description": "Ultra-soft ear cushions and an adjustable headband ensure a perfect fit for extended use."
+    },
+    {
+        "name": "Audio Excellence",
+        "description": "Custom-engineered 40mm drivers produce a rich, balanced sound signature with precision tuning."
+    }
+  ],
+  "highlights": [
+    "Zenith Studio Max headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Protective travel case",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "James_SoundPro",
+        "text": "Zenith Studio Max is a game changer! The sound is incredibly clear, with deep bass and crisp highs. The noise isolation works great, making it ideal for both music and work. A solid investment!"
+    },
+    {
+        "author": "Lena_MusicLover",
+        "text": "I love these headphones! The comfort level is unmatched, and the battery lasts forever. The sound quality is top-tier, and the design is sleek. Highly recommended!"
+    },
+    {
+        "author": "Mike_Creator",
+        "text": "As a content creator, I need reliable, high-quality headphones, and Studio Max delivers. The balanced audio profile is perfect for editing, and the Bluetooth connection is seamless. Great value!"
+    },
+    {
+        "author": "Emma_Traveler",
+        "text": "These are my go-to travel headphones. The battery life is fantastic, and the fit is super comfortable. The sound quality is rich and immersive. I’d buy them again in a heartbeat!"
+    }
+  ]
+    },
+    {
+        "images": {
+            "mob": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459343/pulse_mob_cjxzou.png",
+            "tab": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459350/pulse_tab_n4tohd.png",
+            "desk": "https://res.cloudinary.com/dzhzdqf10/image/upload/v1743459350/pulse_tab_n4tohd.png"
+        },
+        "name": "ZENITH PULSE PRO",
+        "originalPrice": 399,
+        "salePrice": 240,
+        "description": "Zenith Pulse Pro is engineered for those who demand powerful, high-fidelity audio without compromise. With sleek aesthetics and cutting-edge technology, these headphones deliver exceptional sound clarity, deep bass, and ultimate comfort.",
+  "features": [
+    {
+      "name": "Noise Cancellation",
+      "description": "Advanced Hybrid ANC minimizes up to 97% of background noise, ensuring immersive listening."
+    },
+    {
+      "name": "Battery",
+      "description": "40 hours of playback time on a full charge, with fast charging (5 hours in just 10 minutes)."
+    },
+    {
+      "name": "Connectivity",
+      "description": "Bluetooth 5.3 with multi-device pairing for seamless switching."
+    },
+    {
+      "name": "Comfort",
+      "description": "Ultra-lightweight (175g) with memory foam ear cushions for long-lasting wear."
+    },
+    {
+        "name": "Sound Quality",
+        "description": "High-definition 40mm drivers deliver rich, balanced audio with deep bass."
+    }
+  ],
+  "highlights": [
+    "Zenith Pulse Pro headphones",
+    "USB-C charging cable",
+    "3.5mm audio cable",
+    "Premium carrying case",
+    "Quick start guide"
+  ],
+  "reviews": [
+    {
+        "author": "Liam_Soundwave",
+        "text": "Zenith Pulse Pro delivers some of the best sound I’ve ever experienced in wireless headphones. The bass is deep, and the ANC is superb. The design is stylish yet comfortable, even for extended use. 100% satisfied!"
+    },
+    {
+        "author": "Sophia_Audiophile",
+        "text": "I was blown away by the sound quality! The noise cancellation is outstanding, and the battery lasts for days. Switching between my phone and laptop is smooth. Definitely a premium experience at a great price."
+    },
+    {
+        "author": "Nathan_Traveler",
+        "text": "These are my go-to travel headphones! The lightweight design, powerful ANC, and long battery life make them perfect for flights. The fast charge feature is a game-changer. Highly recommend!"
+    },
+    {
+        "author": "Emma_CreativeMind",
+        "text": "I use these every day for work and relaxation. The clarity in music and calls is fantastic. The memory foam ear cups are super comfortable, and the design feels premium. Great value for money!"
+    }
+  ]
+    }
+]
