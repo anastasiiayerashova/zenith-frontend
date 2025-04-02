@@ -11,6 +11,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+
+.reviews_text {
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 10px;
   line-height: 2em;

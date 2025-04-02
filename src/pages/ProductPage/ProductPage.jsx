@@ -72,7 +72,7 @@ const ProductPage = ({ products }) => {
                     <ul className={s.highlights_list}>
                         {product.highlights.map((h, index) => (
                             <li key={index} className={s.h_item}>
-                                <p>{h }</p>
+                                <p className={s.h_text}>{h }</p>
                             </li>
                         ))}
                     </ul>

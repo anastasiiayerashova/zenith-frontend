@@ -20,8 +20,8 @@ const ProductReviews = ({ products }) => {
         <ul className={s.reviews_list}>
             {product.reviews.map((review, index) => (
                 <li key={index} className={s.review_item}>
-                    <p>{review.text }</p>
-                    <p>{review.author }</p>
+                    <p className={s.reviews_text}>{review.text }</p>
+                    <p className={s.reviews_text}>{review.author }</p>
                 </li>
             ))}
         </ul>

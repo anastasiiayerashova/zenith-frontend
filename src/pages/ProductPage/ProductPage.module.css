@@ -14,6 +14,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 32px;
+  line-height: 2em;
   letter-spacing: 0.34em;
   text-transform: uppercase;
   text-align: center;
@@ -63,9 +64,11 @@
   border-radius: 10px;
   padding: 7px 12px;
   border: 1px solid var(--dirty-brown);
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.36em;
+  &p {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.36em;
+  }
 }
 
 .original_wrap {
@@ -140,9 +143,13 @@
   text-transform: uppercase;
   border: 1px solid #b3a396;
   border-radius: 10px;
+  padding: 20px;
+}
+
+.h_text {
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 10px;
-  padding: 20px;
   letter-spacing: 0.42em;
 }
 
