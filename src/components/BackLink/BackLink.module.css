@@ -1,0 +1,19 @@
+.link {
+  padding: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 100px;
+  background-color: var(--dirty-beige);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}

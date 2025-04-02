@@ -49,6 +49,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: var(--black);
+}
+
+a {
+  color: var(--black);
 }
 
 .product_item:first-child {

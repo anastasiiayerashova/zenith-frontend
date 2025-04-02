@@ -2,12 +2,14 @@ import { useState, useRef, useEffect } from 'react'
 import s from './CollectionSection.module.css'
 import { motion } from 'framer-motion'
 import TextGradient from '../../animation/TextGradient.jsx'
+import { Link, useLocation } from 'react-router-dom'
 
 const CollectionSection = ({ products }) => {
     
     const [imageType, setImageType] = useState("mob")
     const [visibleCount, setVisibleCount] = useState(3)   
     const [isExpanded, setIsExpanded] = useState(false)
+    const location = useLocation()
 
     const sectionRef = useRef(null);
     const itemHeight = 400;
@@ -91,6 +93,7 @@ const CollectionSection = ({ products }) => {
             <motion.ul className={s.product_list} initial='hidden' animate='visible'>
                 {products.slice(0, visibleCount).map((product, index) => (
                     <motion.li key={index} className={s.product_item} whileHover={hoverAnimation} variants={featureAnimation} custom={index + 0.55}>
+                        <Link to={`/product/${product.id.toString()}`} state={location}>
                         <div className={s.img_wrapper}>
                             <img src={product.images[imageType]} alt='headfones'/>
                         </div>
@@ -98,7 +101,8 @@ const CollectionSection = ({ products }) => {
                         {product.originalPrice ? (<div><p className={s.name}>{product.name}</p> <div className={s.price_wrapper}>
                             <p className={s.original_price}>Original Price: <span>{`$${product.originalPrice}`}</span></p>
                             <p>{`Sale Price: $ ${product.salePrice}` }</p>
-                        </div></div>) : (<div><p className={s.name}>{product.name}</p> <p className={s.price}>{`Price: $ ${product.price}` }</p></div>)}
+                            </div></div>) : (<div><p className={s.name}>{product.name}</p> <p className={s.price}>{`Price: $ ${product.price}`}</p></div>)}
+                        </Link>
                     </motion.li>
                 ))}
             </motion.ul>

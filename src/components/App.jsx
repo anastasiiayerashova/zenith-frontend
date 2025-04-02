@@ -2,8 +2,11 @@ import s from './App.module.css'
 import { lazy, Suspense, useState, useEffect } from 'react';
 import { db } from '../config/firebase.js';
 import { ref, get } from 'firebase/database'
+import { Route, Routes } from 'react-router-dom';
 
-import HomePage from './../pages/HomePage/HomePage';
+const HomePage = lazy(() => import('../pages/HomePage/HomePage.jsx'))
+const ProductPage = lazy(() => import('../pages/ProductPage/ProductPage.jsx'))
+const ProductReviews = lazy(() => import('../components/ProductReviews/ProductReviews.jsx'))
 
 function App() {
 
@@ -33,7 +36,14 @@ function App() {
       }, [])
 
   return (
-    <HomePage products={products} />
+    <Suspense fallback={null}>
+      <Routes>
+        <Route path='/' element={<HomePage products={products}/>} />
+        <Route path='/product/:productId' element={<ProductPage products={products} />} >
+          <Route path='reviews' element={<ProductReviews/> } />
+        </Route>
+      </Routes>
+    </Suspense>
   )
 }
 

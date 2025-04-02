@@ -4,6 +4,7 @@ import ContactSection from "../../components/ContactSection/ContactSection.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
 import HeroSection from "../../components/HeroSection/HeroSection.jsx"
 import LineSection from "../../components/LineSection/LineSection.jsx"
+import SaleSection from "../../components/SaleSection/SaleSection.jsx"
 import SocialLinks from "../../components/SocialLinks/SocialLinks.jsx"
 
 const HomePage = ({products}) => {
@@ -12,6 +13,7 @@ const HomePage = ({products}) => {
             <HeroSection />
             <SocialLinks />
             <LineSection />
+            <SaleSection products={products} />
             <AboutSection />
             <CollectionSection products={products} />
             <ContactSection />

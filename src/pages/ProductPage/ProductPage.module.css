@@ -1,0 +1,147 @@
+.product {
+  padding: 80px 18px;
+}
+
+.title_wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.8em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.first_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.headfones {
+  border-radius: 36px;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(231, 223, 217, 0.74) 48.82%,
+    rgba(154, 133, 116, 0.74) 85.5%
+  );
+}
+
+.description {
+  padding: 35px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  align-items: center;
+  background: rgba(234, 228, 224, 0.6);
+  border-radius: 36px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price_wrap {
+  border-radius: 10px;
+  padding: 7px 12px;
+  border: 1px solid var(--dirty-brown);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.36em;
+}
+
+.original_wrap {
+  display: flex;
+  column-gap: 12px;
+}
+
+.original_price {
+  text-decoration: line-through;
+}
+
+.normal_price {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.36em;
+}
+
+.descr {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 3em;
+  letter-spacing: 0.18em;
+}
+
+.features_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.feature_item {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.feature_item p {
+  display: inline;
+  white-space: normal;
+  word-break: break-word;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 3em;
+  letter-spacing: 0.18em;
+}
+
+.feature_item::before {
+  content: '•';
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.second_wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.highlights_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+}
+
+.h_item {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #b3a396;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 10px;
+  padding: 20px;
+  letter-spacing: 0.42em;
+}
