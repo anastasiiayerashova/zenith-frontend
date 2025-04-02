@@ -145,3 +145,28 @@
   padding: 20px;
   letter-spacing: 0.42em;
 }
+
+.reviews_wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.btn {
+  background: #eae4e0;
+  border-radius: 10px;
+  padding: 0 40px;
+  font-size: 19px;
+  line-height: 2.68em;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--black);
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--dirty-brown);
+}

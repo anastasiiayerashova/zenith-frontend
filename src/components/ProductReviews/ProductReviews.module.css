@@ -1,0 +1,22 @@
+.reviews_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.review_item {
+  padding: 20px 10px;
+  border-radius: 16px;
+  background: #e4e5e6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+
+.review_item p:last-child {
+  font-weight: 600;
+}

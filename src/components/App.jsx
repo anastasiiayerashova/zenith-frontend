@@ -3,6 +3,7 @@ import { lazy, Suspense, useState, useEffect } from 'react';
 import { db } from '../config/firebase.js';
 import { ref, get } from 'firebase/database'
 import { Route, Routes } from 'react-router-dom';
+import Loader from './Loader/Loader.jsx';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage.jsx'))
 const ProductPage = lazy(() => import('../pages/ProductPage/ProductPage.jsx'))
@@ -10,7 +11,7 @@ const ProductReviews = lazy(() => import('../components/ProductReviews/ProductRe
 
 function App() {
 
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState(null)
   
       useEffect(() => {
           const fetchData = async () => {
@@ -34,13 +35,17 @@ function App() {
           }
           fetchData()
       }, [])
+  
+  if (products === null) {
+    return <Loader />;
+  }
 
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Loader/>}>
       <Routes>
         <Route path='/' element={<HomePage products={products}/>} />
         <Route path='/product/:productId' element={<ProductPage products={products} />} >
-          <Route path='reviews' element={<ProductReviews/> } />
+          <Route path='reviews' element={<ProductReviews products={products} /> } />
         </Route>
       </Routes>
     </Suspense>

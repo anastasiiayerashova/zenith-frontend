@@ -1,7 +1,8 @@
 import s from './ProductPage.module.css'
-import { useLocation, useParams, useSearchParams } from 'react-router-dom'
+import { useLocation, useParams, Link, Outlet } from 'react-router-dom'
 import BackLink from '../../components/BackLink/BackLink.jsx'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, Suspense, useMemo } from 'react'
+import Loader from '../../components/Loader/Loader.jsx'
 
 const ProductPage = ({ products }) => {
     
@@ -10,7 +11,15 @@ const ProductPage = ({ products }) => {
     const { productId } = useParams()
     const [imageType, setImageType] = useState("mob")
 
-    const product = products.find(p => p.id.toString() === productId)
+    const product = useMemo(() => {
+        window.scrollTo(0, 0);
+        return products?.find(p => p.id.toString() === productId) || null
+    }, [productId, products])
+
+
+    if (products === null) {
+        return <Loader />
+    }
 
      useEffect(() => {
         const updImageType = () => {
@@ -68,8 +77,10 @@ const ProductPage = ({ products }) => {
                         ))}
                     </ul>
                     <div className={s.reviews_wrap}>
-                        <button></button>
-                        <ul></ul>
+                        <Link to='reviews' className={s.btn}>Reviews</Link>
+                        <Suspense fallback={<Loader/>}> 
+                          <Outlet />
+                        </Suspense>
                     </div>
                 </div>
             </div>
