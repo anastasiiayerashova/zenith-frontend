@@ -45,7 +45,7 @@ const SaleSection = ({ products }) => {
             <h2 className={s.title}>Sale</h2>
             <div className={s.slider_wrapper}>
                 <button className={`${s.button} ${currentIndex === 0 ? s.disabled : ""}`} onClick={handlePrev} disabled={currentIndex === 0}>
-                    <SlArrowLeft size={14}/>
+                    <SlArrowLeft size={16} fill='var(--dirty-beige)'/>
                 </button>
                 <div className={s.slider}>
                 <ul className={s.product_list} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
@@ -67,7 +67,7 @@ const SaleSection = ({ products }) => {
                     </ul>
                     </div>
                 <button className={`${s.button} ${currentIndex === filteredProducts.length - 1 ? s.disabled : ""}`} onClick={handleNext} disabled={currentIndex === filteredProducts.length - 1}>
-                    <SlArrowRight size={14}/>
+                    <SlArrowRight size={16} fill='var(--dirty-beige)'/>
                 </button>
             </div>
         </section>

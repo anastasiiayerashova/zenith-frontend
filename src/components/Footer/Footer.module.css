@@ -47,5 +47,6 @@
     flex-direction: row;
     justify-content: space-between;
     row-gap: unset;
+    align-items: center;
   }
 }

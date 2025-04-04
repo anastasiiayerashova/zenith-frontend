@@ -16,11 +16,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 24px;
 }
 
 .slider {
   overflow: hidden;
+
+  width: 70%;
 }
 
 .product_list {
@@ -78,7 +80,7 @@
 
 .button {
   cursor: pointer;
-  border: 1px solid var(--black);
+  background: #c5ae9c;
   border-radius: 50%;
   width: 23px;
   height: 23px;
@@ -87,16 +89,27 @@
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .button.disabled {
   opacity: 0.5;
   cursor: not-allowed;
+  background: var(--light-grey);
 }
 
 @media screen and (min-width: 768px) {
   .sale {
     padding: 124px 32px;
+  }
+
+  .slider {
+    /* width: 70%; */
+    width: 60%;
+  }
+
+  .slider_wrapper {
+    gap: 60px;
   }
 
   .title {
@@ -106,7 +119,6 @@
   }
 
   .product_item {
-    min-height: 404px;
     padding: 0px 0px 14px 30px;
   }
 
@@ -125,8 +137,8 @@
   }
 
   .button {
-    width: 46px;
-    height: 46px;
+    width: 66px;
+    height: 66px;
     padding: 12px;
   }
 }
@@ -136,13 +148,16 @@
     padding: 164px 32px;
   }
 
+  .slider {
+    width: 40%;
+  }
+
   .title {
     font-size: 80px;
     letter-spacing: 0.21em;
   }
 
   .product_item {
-    min-height: 600px;
     padding: 0px 0px 20px 40px;
   }
 

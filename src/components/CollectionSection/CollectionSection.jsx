@@ -72,7 +72,7 @@ const CollectionSection = ({ products }) => {
     const hoverAnimation = { scale: 1.1 }
 
     return (
-        <section className={s.collection} ref={sectionRef}>
+        <section className={s.collection} ref={sectionRef} id='collection'>
             <div className={s.text_wrap}>
                 <TextGradient
                     colors={[

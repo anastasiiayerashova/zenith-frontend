@@ -22,10 +22,10 @@ const Header = () => {
                 </button>
             </div>
             <ul className={s.list}>
-                <li>Sale</li>
-                <li>About us</li>
-                <li>Collection</li>
-                <li>Contacts</li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
             <Menu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
