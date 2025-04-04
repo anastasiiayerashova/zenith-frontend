@@ -1,5 +1,5 @@
 .about {
-  padding: 40px 16px 70px 16px;
+  padding: 40px 20px 70px 20px;
   background: linear-gradient(239deg, var(--light-brown) 0%, #a98d77 100%);
   & h2 {
     font-family: 'Lato', sans-serif;
@@ -36,8 +36,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 376px;
-  max-width: 320px;
+  min-height: 378px;
+  width: 100%;
   border-radius: 65px;
 }
 
@@ -48,13 +48,13 @@
 }
 
 .first_li {
-  padding: 24px 21px 11px 21px;
+  width: 100%;
+  padding: 33px 28px 42px;
   border-radius: 24px;
   background-color: var(--dirty-beige);
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  /* justify-content: center; */
   align-items: center;
   & h4 {
     font-weight: 600;
@@ -66,7 +66,6 @@
   & ul {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
     font-weight: 400;
     font-size: 12px;
     line-height: 2.58em;
@@ -78,6 +77,7 @@
 }
 
 .second_li {
+  width: 100%;
   padding: 33px 50px 42px;
   border-radius: 24px;
   background-color: var(--dirty-beige);
@@ -133,7 +133,6 @@
       url(../../images/about-tab2x.png) 2x
     );
     min-height: 392px;
-    min-width: 335px;
   }
 
   .about_list {
@@ -143,8 +142,6 @@
 
   .first_li {
     padding: 14px 13px;
-    /* max-height: 224px; */
-    min-width: 202px;
     row-gap: unset;
     & h4 {
       font-size: 14px;
@@ -160,7 +157,6 @@
 
   .second_li {
     padding: 14px 18px 31px;
-    /* max-height: 224px; */
     row-gap: unset;
     & h4 {
       font-size: 14px;
@@ -214,10 +210,7 @@
 
   .first_li {
     padding: 33px 22px;
-    /* max-height: 224px; */
-    min-width: 358px;
-    row-gap: unset;
-    justify-content: space-between;
+    row-gap: 4px;
     & h4 {
       font-size: 27px;
       line-height: 1.57em;
@@ -232,7 +225,6 @@
 
   .second_li {
     padding: 33px 22px;
-    /* max-height: 224px; */
     row-gap: 4px;
     & h4 {
       font-size: 28px;

@@ -49,16 +49,17 @@ const ProductPage = ({ products }) => {
                 <h2 className={s.title}>{product.name }</h2>
                 <p className={s.text}>{product.descr }</p>
             </div>
+            <div className={s.main_wrap}>
             <div className={s.first_wrap}>
                 <div className={s.headfones}>
                     <img src={product.images[imageType]} alt='headfones'/>
                 </div>
                 <div className={s.description}>
                     <div className={s.price_wrap}>
-                        {product.originalPrice ? (<p className={s.original_wrap}>Price: <span className={s.original_price}>{`$${product.originalPrice}` }</span>{`$${product.salePrice}` }<span></span></p>) : (<p className={s.normal_price}>Price: <span>{`$${product.price}` }</span></p>)}
+                        {product.originalPrice ? (<p className={s.original_wrap}>Price: <span className={s.original_price}>{`$${product.originalPrice}` }</span>{`$${product.salePrice}` }<span></span></p>) : (<p className={s.normal_price}>Price: <span className={s.normal_price}>{`$${product.price}` }</span></p>)}
                     </div>
                     <p className={s.descr}>{product.description}</p>
-                    <p className={s.descr}>Key Features:</p>
+                    <p className={s.small_text}>Key Features:</p>
                     <ul className={s.features_list}>
                         {product.features.map((feature, index) => (
                             <li key={index} className={s.feature_item}>
@@ -67,7 +68,9 @@ const ProductPage = ({ products }) => {
                             </li>
                         ))}
                     </ul>
-                </div>
+                    
+            </div>            
+            </div>
                 <div className={s.second_wrap}>
                     <ul className={s.highlights_list}>
                         {product.highlights.map((h, index) => (
@@ -82,7 +85,8 @@ const ProductPage = ({ products }) => {
                           <Outlet />
                         </Suspense>
                     </div>
-                </div>
+                    </div>
+                    
             </div>
         </section>
     )

@@ -9,7 +9,7 @@
   letter-spacing: 0.57em;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 .slider_wrapper {
@@ -20,8 +20,6 @@
 }
 
 .slider {
-  min-width: 230px;
-  min-height: 180px;
   overflow: hidden;
 }
 
@@ -30,18 +28,19 @@
   transition: transform 0.5s ease-in-out;
 }
 
+.price_container {
+  margin-top: auto;
+}
+
 .product_item {
   cursor: pointer;
-  padding: 140px 0px 16px 13px;
+  padding: 10px 0px 16px 13px;
   border-radius: 36px;
   background: linear-gradient(
     135deg,
     rgba(231, 223, 217, 0.74) 48.82%,
     rgba(154, 133, 116, 0.74) 85.5%
   );
-  position: relative;
-  /* width: 240px; */
-  min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -49,12 +48,8 @@
 }
 
 .img_wrapper {
-  position: absolute;
-  top: -16px;
-  left: 80%;
-  transform: translateX(-60%);
-  width: 90%;
-  z-index: 10;
+  display: flex;
+  align-self: center;
 }
 
 .name {
@@ -62,7 +57,6 @@
   font-size: 10px;
   letter-spacing: 0.5em;
   text-transform: uppercase;
-  padding-top: 40px;
   padding-bottom: 5px;
 }
 
@@ -98,4 +92,71 @@
 .button.disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+@media screen and (min-width: 768px) {
+  .sale {
+    padding: 124px 32px;
+  }
+
+  .title {
+    font-size: 43px;
+    letter-spacing: 0.33em;
+    padding-bottom: 160px;
+  }
+
+  .product_item {
+    min-height: 404px;
+    padding: 0px 0px 14px 30px;
+  }
+
+  .name {
+    font-size: 16px;
+    letter-spacing: 0.31em;
+    padding-bottom: 12px;
+  }
+
+  .price_wrapper {
+    & p {
+      font-size: 11px;
+      line-height: 2em;
+      letter-spacing: 0.45em;
+    }
+  }
+
+  .button {
+    width: 46px;
+    height: 46px;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale {
+    padding: 164px 32px;
+  }
+
+  .title {
+    font-size: 80px;
+    letter-spacing: 0.21em;
+  }
+
+  .product_item {
+    min-height: 600px;
+    padding: 0px 0px 20px 40px;
+  }
+
+  .name {
+    font-size: 19px;
+    letter-spacing: 0.26em;
+    padding-bottom: 14px;
+  }
+
+  .price_wrapper {
+    & p {
+      font-size: 14px;
+      line-height: 2.1em;
+      letter-spacing: 0.36em;
+    }
+  }
 }

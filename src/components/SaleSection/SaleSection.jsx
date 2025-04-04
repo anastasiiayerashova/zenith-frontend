@@ -24,7 +24,6 @@ const SaleSection = ({ products }) => {
         const updImageType = () => {
             if (window.innerWidth >= 1280) {
                 setImageType("desk")
-                setVisibleCount(4)
             }
             else if (window.innerWidth >= 768) {
                 setImageType("tab")
@@ -56,7 +55,7 @@ const SaleSection = ({ products }) => {
                             <img src={product.images[imageType]} alt='headfones'/>
                         </div>
                         
-                        <div>
+                        <div className={s.price_container}>
                             <p className={s.name}>{product.name}</p>
                             <div className={s.price_wrapper}>
                             <p className={s.original_price}>Original Price: <span>{`$${product.originalPrice}`}</span></p>

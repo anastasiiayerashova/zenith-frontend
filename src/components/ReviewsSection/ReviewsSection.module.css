@@ -1,0 +1,26 @@
+.reviews {
+  padding: 40px 20px 45px;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 2.28em;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 40px 32px 45px;
+  }
+
+  .title {
+    font-size: 43px;
+    line-height: 1.7em;
+    letter-spacing: 0.33em;
+    padding-bottom: 54px;
+  }
+}

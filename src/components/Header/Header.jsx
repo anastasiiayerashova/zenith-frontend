@@ -17,8 +17,6 @@ const Header = () => {
         <div className={s.container}>
             <Logo />
             <div className={s.visible}>
-                {/* <input type="checkbox" className={s.theme_checkbox} id="change-theme"/>
-                <label htmlFor="change-theme" className={s.visually_hidden}>Change theme</label> */}
                 <button onClick={toggleMenu}>
                     <RxHamburgerMenu size={32}/>
                 </button>

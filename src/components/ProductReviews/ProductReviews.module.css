@@ -1,7 +1,7 @@
 .reviews_list {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .review_item {
@@ -23,4 +23,29 @@
 
 .review_item p:last-child {
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+  }
+
+  .review_item {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-bottom: 150px;
+  }
+
+  .review_item {
+    max-width: 600px;
+  }
 }
