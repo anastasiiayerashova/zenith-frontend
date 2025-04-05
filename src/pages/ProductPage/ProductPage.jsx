@@ -1,5 +1,5 @@
 import s from './ProductPage.module.css'
-import { useLocation, useParams, Link, Outlet } from 'react-router-dom'
+import { useParams, Link, Outlet } from 'react-router-dom'
 import BackLink from '../../components/BackLink/BackLink.jsx'
 import { useState, useEffect, Suspense, useMemo } from 'react'
 import Loader from '../../components/Loader/Loader.jsx'
