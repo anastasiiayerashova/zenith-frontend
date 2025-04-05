@@ -4,12 +4,14 @@ import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { textAnimation } from '../../config/textAnimation.js';
+import { useLocation, Link } from 'react-router-dom';
 
 const SaleSection = ({ products }) => {
     
     const filteredProducts = products.filter(product => product.originalPrice)
     const [imageType, setImageType] = useState("mob")
     const [currentIndex, setCurrentIndex] = useState(0)
+    const location = useLocation()
 
     const handleNext = () => {
         if (currentIndex < filteredProducts.length - 1) {
@@ -49,7 +51,7 @@ const SaleSection = ({ products }) => {
   });
     
     return (
-        <section className={s.sale}>
+        <section className={s.sale} id='sale'>
             <motion.h2 ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"} className={s.title}>Sale</motion.h2>
             <div className={s.slider_wrapper}>
                 <button className={`${s.button} ${currentIndex === 0 ? s.disabled : ""}`} onClick={handlePrev} disabled={currentIndex === 0}>
@@ -57,8 +59,9 @@ const SaleSection = ({ products }) => {
                 </button>
                 <div className={s.slider}>
                 <ul className={s.product_list} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                {filteredProducts.map((product, index) => (
-                    <li key={currentIndex} className={s.product_item}>
+                        {filteredProducts.map((product, index) => (
+                    <Link to={`/product/${product.id.toString()}`} state={location} key={currentIndex} className={s.product_item}>
+                                <li key={currentIndex}>
                         <div className={s.img_wrapper}>
                             <img src={product.images[imageType]} alt='headfones'/>
                         </div>
@@ -71,6 +74,7 @@ const SaleSection = ({ products }) => {
                             </div>
                         </div>
                     </li>
+                    </Link>
                 ))}
                     </ul>
                     </div>
