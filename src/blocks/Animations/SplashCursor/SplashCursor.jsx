@@ -1075,12 +1075,8 @@ function SplashCursor({
       return delta;
     }
 
-    function generateColor() {
-      let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-      c.r *= 0.15;
-      c.g *= 0.15;
-      c.b *= 0.15;
-      return c;
+    function generateColor () {
+    return { r: 0.792, g: 0.702, b: 0.631 }; // #CAB3A1
     }
 
     function HSVtoRGB(h, s, v) {

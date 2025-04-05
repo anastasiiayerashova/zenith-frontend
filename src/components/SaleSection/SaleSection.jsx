@@ -59,22 +59,23 @@ const SaleSection = ({ products }) => {
                 </button>
                 <div className={s.slider}>
                 <ul className={s.product_list} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                        {filteredProducts.map((product, index) => (
+                    {filteredProducts.map((product, index) => (
                     <Link to={`/product/${product.id.toString()}`} state={location} key={currentIndex} className={s.product_item}>
-                                <li key={currentIndex}>
-                        <div className={s.img_wrapper}>
-                            <img src={product.images[imageType]} alt='headfones'/>
+                    <li key={currentIndex}>
+                        <div className={s.img_wrapper} >
+                            <img src={product.images[imageType]} alt='headfones' />                       
                         </div>
                         
                         <div className={s.price_container}>
                             <p className={s.name}>{product.name}</p>
                             <div className={s.price_wrapper}>
-                            <p className={s.original_price}>Original Price: <span>{`$${product.originalPrice}`}</span></p>
-                            <p>{`Sale Price: $ ${product.salePrice}` }</p>
+                               <p className={s.original_price}>Original Price: <span>{`$${product.originalPrice}`}</span></p>
+                               <p>{`Sale Price: $ ${product.salePrice}` }</p>
                             </div>
                         </div>
                     </li>
                     </Link>
+                               
                 ))}
                     </ul>
                     </div>

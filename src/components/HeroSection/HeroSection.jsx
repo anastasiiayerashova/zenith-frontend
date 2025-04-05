@@ -3,8 +3,15 @@ import s from './HeroSection.module.css'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import { textAnimation } from '../../config/textAnimation.js'
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 const HeroSection = () => {
+
+    const [ref, inView] = useInView({
+    triggerOnce: true,   
+    threshold: 0.2,      
+  });
+
     return (
         <div className={s.hero}>
             <Header />
@@ -13,8 +20,8 @@ const HeroSection = () => {
                 <div className={s.bg}></div>
                 <div className={s.button_wrap}>
                     <motion.p custom={2} variants={textAnimation} initial='hidden' animate='visible' className={s.text}>Open the world of premium sound with Zenith</motion.p>
-                    <motion.a href="#collection" className={s.hero_button_link} initial={{ x: -200, opacity: 0 }} 
-                       animate={{ x: 0, opacity: 1 }} 
+                    <motion.a href="#collection" className={s.hero_button_link} ref={ref} initial={{ x: -200, opacity: 0 }} 
+                       animate={inView ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }} 
                        transition={{
                           type: 'spring',
                           stiffness: 50,
