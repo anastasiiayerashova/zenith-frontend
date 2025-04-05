@@ -4,6 +4,7 @@ import { db } from '../config/firebase.js';
 import { ref, get } from 'firebase/database'
 import { Route, Routes } from 'react-router-dom';
 import Loader from './Loader/Loader.jsx';
+import ScrollToHash from '../config/scrollToHash.js';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage.jsx'))
 const ProductPage = lazy(() => import('../pages/ProductPage/ProductPage.jsx'))
@@ -41,7 +42,8 @@ function App() {
   }
 
   return (
-    <Suspense fallback={<Loader/>}>
+    <Suspense fallback={<Loader />}>
+      <ScrollToHash/>
       <Routes>
         <Route path='/' element={<HomePage products={products}/>} />
         <Route path='/product/:productId' element={<ProductPage products={products} />} >

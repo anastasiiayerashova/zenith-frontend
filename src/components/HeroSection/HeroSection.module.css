@@ -53,7 +53,7 @@
   position: relative;
   white-space: nowrap;
   display: flex;
-  gap: 9px;
+  gap: 12px;
   z-index: 5;
   align-items: center;
   max-width: 416px;

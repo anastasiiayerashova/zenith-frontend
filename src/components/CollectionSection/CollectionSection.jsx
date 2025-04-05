@@ -1,10 +1,16 @@
 import { useState, useRef, useEffect } from 'react'
 import s from './CollectionSection.module.css'
 import { motion } from 'framer-motion'
-import TextGradient from '../../animation/TextGradient.jsx'
 import { Link, useLocation } from 'react-router-dom'
+import { useInView } from 'react-intersection-observer'
+import { textAnimation } from '../../config/textAnimation.js'
 
 const CollectionSection = ({ products }) => {
+
+    const [ref, inView] = useInView({
+    triggerOnce: true,   
+    threshold: 0.2,      
+    });
     
     const [imageType, setImageType] = useState("mob")
     const [visibleCount, setVisibleCount] = useState(3)   
@@ -74,20 +80,9 @@ const CollectionSection = ({ products }) => {
     return (
         <section className={s.collection} ref={sectionRef} id='collection'>
             <div className={s.text_wrap}>
-                <TextGradient
-                    colors={[
-                        'var(--dirty-brown)',
-                        'var(--light-grey)',
-                        'var(--dirty-brown)',
-                        'var(--light-grey)',
-                        'var(--dirty-brown)',
-                    ]}
-                    animationSpeed={4}
-                    showBorder={false}
-                    className={s.title }
-      >
-        COLLECTION
-      </TextGradient>
+                <motion.h2 className={s.title} ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"}>
+                COLLECTION
+                </motion.h2>
                 <p className={s.text}>Zenith is more than just sound. It's an experience. Choose the model that best fits your lifestyle</p>
             </div>
             <motion.ul className={s.product_list} initial='hidden' animate='visible'>

@@ -1,13 +1,15 @@
 import s from './ProductPage.module.css'
 import { useLocation, useParams, Link, Outlet } from 'react-router-dom'
 import BackLink from '../../components/BackLink/BackLink.jsx'
-import { useRef, useState, useEffect, Suspense, useMemo } from 'react'
+import { useState, useEffect, Suspense, useMemo } from 'react'
 import Loader from '../../components/Loader/Loader.jsx'
+import { AnimatedLayout } from '../../components/AnimatedLayout.jsx'
+import { motion } from 'framer-motion'
+import { textAnimation } from '../../config/textAnimation.js'
+import SplashCursor from '../../blocks/Animations/SplashCursor/SplashCursor.jsx'
 
 const ProductPage = ({ products }) => {
     
-    const location = useLocation()
-    const backLinkHref = useRef(location.state ?? '/')
     const { productId } = useParams()
     const [imageType, setImageType] = useState("mob")
 
@@ -43,11 +45,15 @@ const ProductPage = ({ products }) => {
 
 
     return (
+        <AnimatedLayout>
+        <SplashCursor/>
         <section className={s.product}>
-            <BackLink to={backLinkHref.current } />
+            <BackLink to={'/#collection'} />
             <div className={s.title_wrap}>
-                <h2 className={s.title}>{product.name }</h2>
-                <p className={s.text}>{product.descr }</p>
+                <motion.h2 custom={1} variants={textAnimation} initial='hidden' animate='visible' className={s.title}>
+                        {product.name}
+                    </motion.h2>
+                <motion.p custom={2} variants={textAnimation} initial='hidden' animate='visible' className={s.text}>{product.descr }</motion.p>
             </div>
             <div className={s.main_wrap}>
             <div className={s.first_wrap}>
@@ -89,6 +95,7 @@ const ProductPage = ({ products }) => {
                     
             </div>
         </section>
+        </AnimatedLayout>
     )
 }
 

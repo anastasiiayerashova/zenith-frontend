@@ -79,12 +79,20 @@
 }
 
 .original_wrap {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   column-gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.36em;
 }
 
 .original_price {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   text-decoration: line-through;
+  letter-spacing: 0.36em;
 }
 
 .normal_price {
@@ -243,6 +251,23 @@
     position: absolute;
     align-self: flex-start;
     width: 95%;
+    padding-bottom: 40px;
+  }
+
+  .original_wrap {
+    font-size: 12px;
+  }
+
+  .original_price {
+    font-size: 12px;
+  }
+
+  .normal_price {
+    font-size: 12px;
+  }
+
+  .btn {
+    align-self: flex-start;
   }
 }
 
@@ -289,6 +314,7 @@
   .second_wrap {
     position: unset;
     align-items: center;
+    width: unset;
   }
 
   .highlights_list {
@@ -303,5 +329,6 @@
 
   .btn {
     margin-top: 40px;
+    align-self: center;
   }
 }

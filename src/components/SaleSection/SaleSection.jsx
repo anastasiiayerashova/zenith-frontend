@@ -1,6 +1,9 @@
 import s from './SaleSection.module.css'
 import { useState, useEffect } from 'react'
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { textAnimation } from '../../config/textAnimation.js';
 
 const SaleSection = ({ products }) => {
     
@@ -39,10 +42,15 @@ const SaleSection = ({ products }) => {
 
         return () => window.removeEventListener('resize', updImageType)
     }, [])
+
+    const [ref, inView] = useInView({
+    triggerOnce: true,   
+    threshold: 0.2,      
+  });
     
     return (
         <section className={s.sale}>
-            <h2 className={s.title}>Sale</h2>
+            <motion.h2 ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"} className={s.title}>Sale</motion.h2>
             <div className={s.slider_wrapper}>
                 <button className={`${s.button} ${currentIndex === 0 ? s.disabled : ""}`} onClick={handlePrev} disabled={currentIndex === 0}>
                     <SlArrowLeft size={16} fill='var(--dirty-beige)'/>

@@ -7,10 +7,12 @@ import LineSection from "../../components/LineSection/LineSection.jsx"
 import ReviewsSection from "../../components/ReviewsSection/ReviewsSection.jsx"
 import SaleSection from "../../components/SaleSection/SaleSection.jsx"
 import SocialLinks from "../../components/SocialLinks/SocialLinks.jsx"
+import SplashCursor from "../../blocks/Animations/SplashCursor/SplashCursor.jsx"
 
 const HomePage = ({products}) => {
     return (
         <>
+            <SplashCursor/>
             <HeroSection />
             <SocialLinks />
             <LineSection />
