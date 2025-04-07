@@ -3,8 +3,10 @@ import s from './ContactSection.module.css'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { textAnimation } from '../../config/textAnimation.js'
+import Modal from '../Modal/Modal.jsx'
+import Popover from '../Popover/Popover.jsx'
 
-const ContactSection = () => {
+const ContactSection = ({onEmailSent, isOpen, onClose}) => {
 
     const [ref, inView] = useInView({
     triggerOnce: true,   
@@ -15,7 +17,12 @@ const ContactSection = () => {
         <section className={s.contact} id='contacts'>
             <motion.h2 ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"} className={s.contact_title}>Contact us</motion.h2>
             <motion.p ref={ref} custom={2} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"} className={s.text}>We are always in touch. Email us or leave your contacts and we will respond as soon as possible</motion.p>
-            <ContactForm/>
+            <ContactForm onEmailSent={onEmailSent} />
+            {isOpen && (
+                <Modal isOpen={isOpen} onClose={onClose}>
+                    <Popover/>
+                </Modal>
+            )}
         </section>
     )
  }

@@ -37,7 +37,7 @@ const ReviewsSection = () => {
                 <div className={s.slider}>
                     <ul className={s.reviews_list} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                         {clients.map((client, index) => (
-                            <li key={currentIndex} className={s.review_item}>
+                            <li key={client.author} className={s.review_item}>
                                 <div className={s.review_content}>
                                 <p className={s.text}>{client.text }</p>
                                 <p className={s.author}>{client.author}</p>

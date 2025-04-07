@@ -8,8 +8,20 @@ import ReviewsSection from "../../components/ReviewsSection/ReviewsSection.jsx"
 import SaleSection from "../../components/SaleSection/SaleSection.jsx"
 import SocialLinks from "../../components/SocialLinks/SocialLinks.jsx"
 import SplashCursor from "../../blocks/Animations/SplashCursor/SplashCursor.jsx"
+import { useState } from "react"
 
-const HomePage = ({products}) => {
+const HomePage = ({ products }) => {
+    
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
     return (
         <>
             <SplashCursor/>
@@ -20,7 +32,7 @@ const HomePage = ({products}) => {
             <AboutSection />
             <CollectionSection products={products} />
             <ReviewsSection/>
-            <ContactSection />
+            <ContactSection onEmailSent={openModal} isOpen={isModalOpen} onClose={closeModal} />
             <Footer/>
         </>
     )

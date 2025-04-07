@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 import s from './ContactForm.module.css'
 
 
-const ContactForm = () => {
+const ContactForm = ({onEmailSent}) => {
 
     const schema = () => {
     return Yup.object().shape({
@@ -42,9 +42,14 @@ const ContactForm = () => {
         reValidateMode: 'onChange'
     })
 
+    const onSubmit = (values) => {
+        reset()
+        onEmailSent()
+    }
+
     return (
         <div className={s.container}>
-            <form className={s.form}>
+            <form onSubmit={handleSubmit(onSubmit)} className={s.form}>
                 <div className={s.input_group}>
                     <label htmlFor={nameId} className={s.visually_hidden}>Name</label>
                     <input id={nameId} type='text' {...register('name')} placeholder='NAME' />

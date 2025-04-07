@@ -60,8 +60,8 @@ const SaleSection = ({ products }) => {
                 <div className={s.slider}>
                 <ul className={s.product_list} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {filteredProducts.map((product, index) => (
-                    <Link to={`/product/${product.id.toString()}`} state={location} key={currentIndex} className={s.product_item}>
-                    <li key={currentIndex}>
+                    <Link to={`/product/${product.id.toString()}`} state={location} key={product.id} className={s.product_item}>
+                    <li>
                         <div className={s.img_wrapper} >
                             <img src={product.images[imageType]} alt='headfones' />                       
                         </div>
