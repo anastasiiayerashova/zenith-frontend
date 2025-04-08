@@ -1,22 +1,9 @@
 import s from './AboutSection.module.css'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
-import { leftSlide, rightSlide } from '../../config/textAnimation.js'
+import { leftSlide, rightSlide, ulAnimation } from '../../config/textAnimation.js'
 
 const AboutSection = () => {
-    
-    const ulAnimation = {
-    hidden: { opacity: 0, y: 100 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'spring',
-        stiffness: 50,
-        damping: 25,
-      },
-    },
-  };
 
     const [ref, inView] = useInView({
     triggerOnce: false,   
@@ -53,7 +40,7 @@ const AboutSection = () => {
                     initial="hidden"
                     animate={inViewUl ? "visible" : "hidden"}
                     variants={ulAnimation}
-                    transition={{ delay: 0.1 }}
+                    transition={{ delay: 0.50 }}
                     ref={refUl}
                     className={s.about_list}>
                     <li className={s.first_li}>

@@ -1,15 +1,28 @@
 import s from './ProductPage.module.css'
-import { useParams, Link, Outlet } from 'react-router-dom'
+import { useParams, Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import BackLink from '../../components/BackLink/BackLink.jsx'
 import { useState, useEffect, Suspense, useMemo } from 'react'
 import Loader from '../../components/Loader/Loader.jsx'
 import { AnimatedLayout } from '../../components/AnimatedLayout.jsx'
 import { motion } from 'framer-motion'
-import { leftSlide, rightSlide } from '../../config/textAnimation.js'
+import { leftSlide, rightSlide, ulAnimation } from '../../config/textAnimation.js'
 import { useInView } from 'react-intersection-observer'
 import TiltedCard from '../../blocks/Components/TiltedCard/TiltedCard.jsx'
 
 const ProductPage = ({ products }) => {
+
+    const location = useLocation();
+  const navigate = useNavigate();
+
+  const isReviewsVisible = location.pathname.endsWith('/reviews')
+
+  const toggleReviews = () => {
+    if (isReviewsVisible) {
+      navigate(`/product/${productId}`)
+    } else {
+      navigate(`/product/${productId}/reviews`);
+    }
+  }
     
     const { productId } = useParams()
     const [imageType, setImageType] = useState("mob")
@@ -54,6 +67,10 @@ const ProductPage = ({ products }) => {
     threshold: 0.2,      
     })
 
+    const [refUl, inViewUl] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+    })
 
     return (
         <AnimatedLayout>
@@ -97,19 +114,28 @@ const ProductPage = ({ products }) => {
             </div>            
             </div>
                 <div className={s.second_wrap}>
-                    <ul className={s.highlights_list}>
+                    <motion.ul initial="hidden"
+                                        animate={inViewUl ? "visible" : "hidden"}
+                                        variants={ulAnimation}
+                                        transition={{ delay: 0.50 }}
+                                        ref={refUl} className={s.highlights_list}>
                         {product.highlights.map((h, index) => (
                             <li key={index} className={s.h_item}>
                                 <p className={s.h_text}>{h }</p>
                             </li>
                         ))}
-                    </ul>
+                    </motion.ul>
                     <div className={s.reviews_wrap}>
-                        <Link to='reviews' className={s.btn}>Reviews</Link>
-                        <Suspense fallback={<Loader/>}> 
-                          <Outlet />
-                        </Suspense>
-                    </div>
+      <button onClick={toggleReviews} className={s.btn}>
+        {isReviewsVisible ? 'Hide reviews' : 'Reviews'}
+      </button>
+
+      {isReviewsVisible && (
+        <Suspense fallback={<Loader />}>
+          <Outlet />
+        </Suspense>
+      )}
+    </div>
                     </div>
                     
             </div>

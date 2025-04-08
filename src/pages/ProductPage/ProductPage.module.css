@@ -196,9 +196,14 @@
   align-self: center;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   background: var(--dirty-brown);
+}
+
+.btn:focus,
+.btn:active {
+  background: #eae4e0;
+  color: var(--black);
 }
 
 @media screen and (min-width: 768px) {
