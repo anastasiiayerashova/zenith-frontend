@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { textAnimation } from '../../config/textAnimation.js';
+import { leftSlide } from '../../config/textAnimation.js';
 import { useLocation, Link } from 'react-router-dom';
 
 const SaleSection = ({ products }) => {
@@ -46,13 +46,13 @@ const SaleSection = ({ products }) => {
     }, [])
 
     const [ref, inView] = useInView({
-    triggerOnce: true,   
+    triggerOnce: false,   
     threshold: 0.2,      
-  });
+    });
     
     return (
         <section className={s.sale} id='sale'>
-            <motion.h2 ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"} className={s.title}>Sale</motion.h2>
+            <motion.h2 ref={ref} variants={leftSlide} initial='hidden' animate={inView ? "visible" : "hidden"} className={s.title}>Sale</motion.h2>
             <div className={s.slider_wrapper}>
                 <button className={`${s.button} ${currentIndex === 0 ? s.disabled : ""}`} onClick={handlePrev} disabled={currentIndex === 0}>
                     <SlArrowLeft size={16} fill='var(--dirty-beige)'/>

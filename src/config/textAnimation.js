@@ -1,11 +1,17 @@
-    export const textAnimation = {
-    hidden: { 
-        scale: 0.5, 
-        opacity: 0 
-    },
-    visible: custom => ({
-        scale: 1,
-        opacity: 1,
-        transition: { delay: custom * 0.2, duration: 0.3 }
-    })
+export const leftSlide = {
+  hidden: { x: -200, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
+
+export const rightSlide = {
+  hidden: { x: 200, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
 };

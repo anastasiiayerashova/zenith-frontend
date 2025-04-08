@@ -1,7 +1,7 @@
 import s from './AboutSection.module.css'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
-import { textAnimation } from '../../config/textAnimation.js'
+import { leftSlide, rightSlide } from '../../config/textAnimation.js'
 
 const AboutSection = () => {
     
@@ -19,27 +19,43 @@ const AboutSection = () => {
   };
 
     const [ref, inView] = useInView({
-    triggerOnce: true,   
+    triggerOnce: false,   
+    threshold: 0.2,      
+    });
+
+    const [refText, inViewText] = useInView({
+    triggerOnce: false,   
     threshold: 0.2,      
     });
 
     const [refUl, inViewUl] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+    triggerOnce: false,
+    threshold: 0.2,
+    })
     
     return (
         <section className={s.about} id='about'>
-            <motion.h2 ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"}>About Zenith</motion.h2>
+            <motion.h2
+                ref={ref}
+                custom={1}
+                variants={leftSlide}
+                initial='hidden'
+                animate={inView ? "visible" : "hidden"}>About Zenith</motion.h2>
             <div className={s.first_wrap}>
                 <div className={s.image}></div>
-                <p>Zenith is a premium audio brand, dedicated to creating high-quality Bluetooth headphones that combine advanced technology, sophisticated design, and everyday comfort. Founded by a team of audio enthusiasts, we aim to redefine how people experience sound.</p>
-            </div>
+                <motion.p ref={refText}
+                    variants={rightSlide}
+                    initial="hidden"
+                    animate={inViewText ? "visible" : "hidden"}>Zenith is a premium audio brand, dedicated to creating high-quality Bluetooth headphones that combine advanced technology, sophisticated design, and everyday comfort. Founded by a team of audio enthusiasts, we aim to redefine how people experience sound.</motion.p>
+                </div>
             <div className={s.second_wrap}>
-                <motion.ul  initial="hidden"
-          animate={inViewUl ? "visible" : "hidden"}
-          variants={ulAnimation}
-          transition={{ delay: 0.1 }} ref={refUl} className={s.about_list}>
+                <motion.ul
+                    initial="hidden"
+                    animate={inViewUl ? "visible" : "hidden"}
+                    variants={ulAnimation}
+                    transition={{ delay: 0.1 }}
+                    ref={refUl}
+                    className={s.about_list}>
                     <li className={s.first_li}>
                         <h4>Why Choose Us</h4>
                         <ul>

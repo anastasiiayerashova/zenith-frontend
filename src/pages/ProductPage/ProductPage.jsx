@@ -5,8 +5,9 @@ import { useState, useEffect, Suspense, useMemo } from 'react'
 import Loader from '../../components/Loader/Loader.jsx'
 import { AnimatedLayout } from '../../components/AnimatedLayout.jsx'
 import { motion } from 'framer-motion'
-import { textAnimation } from '../../config/textAnimation.js'
-import SplashCursor from '../../blocks/Animations/SplashCursor/SplashCursor.jsx'
+import { leftSlide, rightSlide } from '../../config/textAnimation.js'
+import { useInView } from 'react-intersection-observer'
+import TiltedCard from '../../blocks/Components/TiltedCard/TiltedCard.jsx'
 
 const ProductPage = ({ products }) => {
     
@@ -41,24 +42,42 @@ const ProductPage = ({ products }) => {
         window.addEventListener('resize', updImageType)
 
         return () => window.removeEventListener('resize', updImageType)
-    }, [])
+     }, [])
+    
+    const [refTitle, inViewTitle] = useInView({
+    triggerOnce: false,   
+    threshold: 0.2,      
+    });
+
+    const [refText, inViewText] = useInView({
+    triggerOnce: false,   
+    threshold: 0.2,      
+    })
 
 
     return (
         <AnimatedLayout>
-        <SplashCursor/>
         <section className={s.product}>
             <BackLink to={'/#collection'} />
             <div className={s.title_wrap}>
-                <motion.h2 custom={1} variants={textAnimation} initial='hidden' animate='visible' className={s.title}>
+                <motion.h2 ref={refTitle} variants={leftSlide} initial='hidden' animate={inViewTitle ? "visible" : "hidden"} className={s.title}>
                         {product.name}
                     </motion.h2>
-                <motion.p custom={2} variants={textAnimation} initial='hidden' animate='visible' className={s.text}>{product.descr }</motion.p>
+                <motion.p ref={refText} variants={rightSlide} initial='hidden' animate={inViewText ? "visible" : "hidden"} className={s.text}>{product.descr }</motion.p>
             </div>
             <div className={s.main_wrap}>
             <div className={s.first_wrap}>
                 <div className={s.headfones}>
-                    <img src={product.images[imageType]} alt='headfones'/>
+                    <TiltedCard
+                    imageSrc={product.images[imageType]}
+                    altText={product.name}
+                    captionText={product.name}
+                    rotateAmplitude={24}
+                    scaleOnHover={1.4}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    />
                 </div>
                 <div className={s.description}>
                     <div className={s.price_wrap}>

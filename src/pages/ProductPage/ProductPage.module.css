@@ -314,6 +314,7 @@
   .second_wrap {
     position: unset;
     align-items: center;
+    align-self: unset;
     width: unset;
   }
 

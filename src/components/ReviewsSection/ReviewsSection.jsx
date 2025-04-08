@@ -4,12 +4,17 @@ import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import { clients } from '../../config/clients.js';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer'
-import { textAnimation } from '../../config/textAnimation.js'
+import { leftSlide } from '../../config/textAnimation.js';
 
 const ReviewsSection = () => {
 
     const [ref, inView] = useInView({
     triggerOnce: true,   
+    threshold: 0.2,      
+    });
+
+    const [refTitle, inViewTitle] = useInView({
+    triggerOnce: false,   
     threshold: 0.2,      
     });
 
@@ -29,7 +34,7 @@ const ReviewsSection = () => {
 
     return (
         <section className={s.reviews}>
-            <motion.h2 ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"} className={s.title}>Reviews</motion.h2>
+            <motion.h2 ref={refTitle} variants={leftSlide} initial='hidden' animate={inViewTitle ? "visible" : "hidden"} className={s.title}>Reviews</motion.h2>
             <div className={s.slider_wrapper}>
                 <button className={`${s.button} ${currentIndex === 0 ? s.disabled : ""}`} onClick={handlePrev} disabled={currentIndex === 0}>
                     <SlArrowLeft size={14} fill='var(--light-brown)'/>

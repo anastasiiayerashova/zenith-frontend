@@ -3,14 +3,9 @@ import s from './CollectionSection.module.css'
 import { motion } from 'framer-motion'
 import { Link, useLocation } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
-import { textAnimation } from '../../config/textAnimation.js'
+import { leftSlide, rightSlide } from '../../config/textAnimation.js'
 
 const CollectionSection = ({ products }) => {
-
-    const [ref, inView] = useInView({
-    triggerOnce: true,   
-    threshold: 0.2,      
-    });
     
     const [imageType, setImageType] = useState("mob")
     const [visibleCount, setVisibleCount] = useState(3)   
@@ -77,13 +72,23 @@ const CollectionSection = ({ products }) => {
 
     const hoverAnimation = { scale: 1.1 }
 
+     const [refTitle, inViewTitle] = useInView({
+    triggerOnce: false,   
+    threshold: 0.2,      
+    });
+
+    const [refText, inViewText] = useInView({
+    triggerOnce: false,   
+    threshold: 0.2,      
+    })
+
     return (
         <section className={s.collection} ref={sectionRef} id='collection'>
             <div className={s.text_wrap}>
-                <motion.h2 className={s.title} ref={ref} custom={1} variants={textAnimation} initial='hidden' animate={inView ? "visible" : "hidden"}>
+                <motion.h2 className={s.title} ref={refTitle} variants={leftSlide} initial='hidden' animate={inViewTitle ? "visible" : "hidden"}>
                 COLLECTION
                 </motion.h2>
-                <p className={s.text}>Zenith is more than just sound. It's an experience. Choose the model that best fits your lifestyle</p>
+                <motion.p ref={refText} variants={rightSlide} initial='hidden' animate={inViewText ? "visible" : "hidden"} className={s.text}>Zenith is more than just sound. It's an experience. Choose the model that best fits your lifestyle</motion.p>
             </div>
             <motion.ul className={s.product_list} initial='hidden' animate='visible'>
                 {products.slice(0, visibleCount).map((product, index) => (
