@@ -21,7 +21,6 @@
 
 .slider {
   overflow: hidden;
-
   width: 70%;
 }
 
@@ -137,9 +136,8 @@
   }
 
   .button {
-    width: 66px;
-    height: 66px;
-    padding: 12px;
+    width: 25px;
+    height: 25px;
   }
 }
 
