@@ -1,4 +1,4 @@
-div p {
+.logo {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -7,7 +7,7 @@ div p {
 }
 
 @media screen and (min-width: 768px) {
-  div p {
+  .logo {
     font-size: 30px;
     line-height: 1em;
     letter-spacing: 0.05em;
@@ -15,7 +15,7 @@ div p {
 }
 
 @media screen and (min-width: 1280px) {
-  div p {
+  .logo {
     font-size: 32px;
     line-height: 1em;
   }
