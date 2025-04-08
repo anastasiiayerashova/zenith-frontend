@@ -20,17 +20,17 @@
   line-height: 1.82em;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 0 20px 0px 20px;
+  padding: 0 20px;
 }
 
 .bg {
-  background-image: image-set(
+  /* background-image: image-set(
     url(../../images/woman-mob@1x.png) 1x,
     url(../../images/woman-mob@2x.png) 2x
   );
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   min-height: 503px;
 }
 
@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  padding: 0 18px 0 18px;
+  padding: 0 20px;
 }
 
 .text {
@@ -108,36 +108,41 @@
     left: 50%;
     width: 50%;
     height: 100%;
-    background-image: image-set(
+    /* background-image: image-set(
       url(../../images/woman-tab@1x.png) 1x,
       url(../../images/woman-tab@2x.png) 2x
     );
     background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     z-index: -1;
-    background-color: var(--light-brown);
-    min-height: 715px;
+    /* background-color: linear-gradient(45deg, #cab3a1, #a88c76); */
+    max-height: 715px;
+    & img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
-  .bg::before {
+  /* .bg::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 8px;
+    width: 15%;
     height: 100%;
-    background: var(--dirty-brown);
+    background: linear-gradient(45deg, #cab3a1, #a88c76);
     filter: blur(1px);
-  }
+  } */
 
   .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     row-gap: 91px;
     margin-top: 60px;
     max-width: 50%;
+    padding: 0 32px;
   }
 
   .title {
@@ -145,13 +150,14 @@
     font-size: 40px;
     text-align: left;
     letter-spacing: 0.12em;
+    padding: unset;
   }
 
   .button_wrap {
     display: flex;
     flex-direction: column;
     row-gap: 61px;
-    align-items: flex-end;
+    padding: unset;
   }
 
   .hero_button {
@@ -169,18 +175,24 @@
 
 @media screen and (min-width: 1280px) {
   .bg {
-    min-height: 950px;
+    max-height: 926px;
+    /* background-size: contain;
     background-image: image-set(
       url(../../images/woman-desk@1x.png) 1x,
       url(../../images/woman-desk@2x.png) 2x
     );
+    background-position-x: center; */
+    & img {
+      margin-left: auto;
+      max-height: 850px;
+      max-width: 620px;
+    }
   }
 
   .title {
     font-size: 65px;
     line-height: 1.62em;
     letter-spacing: 0.12em;
-    padding: 0 0 0 60px;
   }
 
   .container {
@@ -189,7 +201,6 @@
 
   .button_wrap {
     row-gap: 68px;
-    padding: 0 32px;
   }
 
   .text {

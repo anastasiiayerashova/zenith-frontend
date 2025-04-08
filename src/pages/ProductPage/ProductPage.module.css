@@ -213,6 +213,7 @@
 
   .title_wrap {
     row-gap: 54px;
+    margin: 0 auto;
     margin-bottom: 80px;
   }
 
@@ -273,6 +274,11 @@
 
   .btn {
     align-self: flex-start;
+  }
+
+  .arrow_wrap {
+    display: flex;
+    justify-content: center;
   }
 }
 

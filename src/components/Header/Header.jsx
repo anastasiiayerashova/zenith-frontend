@@ -21,12 +21,12 @@ const Header = () => {
                     <RxHamburgerMenu size={32}/>
                 </button>
             </div>
-            <ul className={s.list}>
+            {/* <ul className={s.list}>
                 <li><a href="#sale">Sale</a></li>
                 <li><a href="#about">About us</a></li>
                 <li><a href="#collection">Collection</a></li>
                 <li><a href="#contacts">Contacts</a></li>
-            </ul>
+            </ul> */}
         </div>
             <Menu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </>

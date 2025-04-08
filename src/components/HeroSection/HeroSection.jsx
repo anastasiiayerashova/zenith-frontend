@@ -26,7 +26,9 @@ const HeroSection = () => {
             <Header />
             <div className={s.container}>
                 <motion.h1 ref={refTitle} variants={leftSlide} initial='hidden' animate={inViewTitle ? "visible" : "hidden"} className={s.title}>Sound at the peak of perfection</motion.h1>
-                <div className={s.bg}></div>
+          <div className={s.bg}>
+            <img src='/public/images/woman-desk@2x.png' alt='woman'/>
+                </div>
                 <div className={s.button_wrap}>
                     <motion.p ref={refText} variants={rightSlide} initial='hidden' animate={inViewText ? "visible" : "hidden"} className={s.text}>Open the world of premium sound with Zenith</motion.p>
                     <motion.a href="#collection" className={s.hero_button_link} ref={ref} initial={{ x: 200, opacity: 0 }} 

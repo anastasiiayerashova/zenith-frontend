@@ -74,14 +74,16 @@ const ProductPage = ({ products }) => {
 
     return (
         <AnimatedLayout>
-        <section className={s.product}>
+            <section className={s.product}>
+                <div className={s.arrow_wrap}>
             <BackLink to={'/#collection'} />
             <div className={s.title_wrap}>
                 <motion.h2 ref={refTitle} variants={leftSlide} initial='hidden' animate={inViewTitle ? "visible" : "hidden"} className={s.title}>
                         {product.name}
                     </motion.h2>
                 <motion.p ref={refText} variants={rightSlide} initial='hidden' animate={inViewText ? "visible" : "hidden"} className={s.text}>{product.descr }</motion.p>
-            </div>
+                    </div>
+                    </div>
             <div className={s.main_wrap}>
             <div className={s.first_wrap}>
                 <div className={s.headfones}>

@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .visible {
     display: none;
   }
@@ -108,4 +108,4 @@
     display: flex;
     column-gap: 40px;
   }
-}
+} */
