@@ -103,6 +103,22 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .first_li {
+    padding: 33px 14px 42px;
+    & h4 {
+      font-size: 20px;
+    }
+  }
+
+  .second_li {
+    padding: 33px 25px 42px;
+    & h4 {
+      font-size: 20px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about {
     padding: 60px 32px;

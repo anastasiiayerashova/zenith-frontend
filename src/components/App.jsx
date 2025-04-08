@@ -4,7 +4,6 @@ import { ref, get } from 'firebase/database'
 import { Route, Routes } from 'react-router-dom';
 import Loader from './Loader/Loader.jsx';
 import ScrollToHash from '../config/scrollToHash.js';
-import ClickSpark from './../blocks/Animations/ClickSpark/ClickSpark.jsx'
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage.jsx'))
 const ProductPage = lazy(() => import('../pages/ProductPage/ProductPage.jsx'))
@@ -24,7 +23,6 @@ function App() {
                      const data = snapshot.val()
                      const productsArray = Array.isArray(data) ? data : Object.values(data)
                      setProducts(productsArray)
-                     console.log("Данные из Firebase:", productsArray)
                       
                   } else {
                      console.log("Нет данных")
@@ -42,13 +40,6 @@ function App() {
   }
 
   return (
-    <ClickSpark
-      sparkColor='#A88C76'
-      sparkSize={14}
-      sparkRadius={15}
-      sparkCount={8}
-      duration={400}
-    >
       <Suspense fallback={<Loader />}>
         <ScrollToHash/>
         <Routes>
@@ -58,7 +49,6 @@ function App() {
           </Route>
         </Routes>
       </Suspense>
-    </ClickSpark>
   )
 }
 

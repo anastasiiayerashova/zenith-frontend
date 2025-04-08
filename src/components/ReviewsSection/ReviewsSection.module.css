@@ -52,17 +52,6 @@
 }
 
 .review_item {
-  /* padding: 32px;
-  background: var(--grey);
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 24px;
-  flex: 0 0 calc(100% - 5px);
-  margin-right: 5px;
-  box-sizing: border-box; */
-
   flex: 0 0 100%; /* один элемент занимает весь слайдер */
   display: flex;
   justify-content: center;
@@ -77,6 +66,7 @@
   padding: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 24px;
 }
 
