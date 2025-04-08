@@ -23,6 +23,12 @@
   line-height: 2.8em;
 }
 
+@media screen and (max-width: 375px) {
+  .contact_title {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact {
     padding: 124px 94px;

@@ -115,6 +115,12 @@ a {
   border-bottom: 1px solid var(--light-brown);
 }
 
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .collection {
     padding: 124px 32px;

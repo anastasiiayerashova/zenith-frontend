@@ -104,6 +104,12 @@
 }
 
 @media screen and (max-width: 375px) {
+  .about {
+    & h2 {
+      font-size: 24px;
+    }
+  }
+
   .first_li {
     padding: 33px 14px 42px;
     & h4 {

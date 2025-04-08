@@ -111,6 +111,12 @@
   background-color: var(--dirty-beige);
 }
 
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .reviews {
     padding: 40px 32px 80px;
