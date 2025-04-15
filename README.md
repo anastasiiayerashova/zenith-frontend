@@ -37,3 +37,11 @@ This website was built using the following technologies:
 > My goal is to grow professionally, achieve meaningful results, and work with people who share my drive for success.  
 > I approach every task with responsibility and dedication, always giving 100%.  
 > My ability to quickly adapt to new challenges and technologies allows me to thrive in agile and fast-paced environments."
+
+## 📫 Contact
+
+- [LinkedIn](www.linkedin.com/in/anastasia-yerashova)
+- [GitHub](https://github.com/anastasiiayerashova)
+- Email: yerashova.a@gmail.com
+
+> Thank you for checking out the project! If you found it helpful or interesting, feel free to leave a ⭐ on the repository.
